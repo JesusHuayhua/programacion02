@@ -1,0 +1,9 @@
+#Archivos generados por NetBeans
+Makile
+build/
+nbproject/
+dist/
+*.inc/
+# Extensiones de los file
+.vscode/
+
