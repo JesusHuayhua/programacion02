@@ -1,6 +1,6 @@
 # Compilación de un programa
 
-![Compiler](Img/00Compiler.PNG)
+![Compiler](Img/00Compiler.png)
 
 ## ¿Que es la compilación?
 
@@ -87,4 +87,4 @@ Aquí, dejo un [link](https://www.geeksforgeeks.org/difference-between-c-and-c/)
 - [Scaler - How is a C++ Program Compiler and Executed?](https://www.scaler.com/topics/how-to-compile-cpp/)
 - [El modelo de compilación en C](https://www.it.uc3m.es/~pedmume/asignaturas/2005/LAO/Lab2/tutorial4/www-etsi2.ugr.es/depar/ccia/mp2/old/apoyo/modelo/modelo.html)
 
-[Siguiente tema :point_right:](01EntradaYSalidaDeDatos.md)
+[01EntradaYSalidaDeDatos :point_right:](01EntradaYSalidaDeDatos.md)
