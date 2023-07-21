@@ -1,0 +1,9 @@
+15
+c
+12.8
+0x1A
+64
+                    "LenguajeDeProgramacion1"
+FraseIncompleta
+
+********FraseIncompleta

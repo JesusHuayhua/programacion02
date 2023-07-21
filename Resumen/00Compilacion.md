@@ -33,7 +33,7 @@ En este primer paso de compilación se realiza con una herramienta llamada `pre-
 
 > Si desean generar el `archivo.i`, tienen que hacer uso del siguiente comando en su terminal
 ```bash
-gcc -E -0 archivo.i programa.c
+gcc -E -o archivo.i programa.c
 ```
 
 
@@ -69,8 +69,8 @@ de las funciones en lenguaje máquina, y estos archivos tienen una extensión `.
 y `.out` en sistemas operativos UNIX.
 
 ```bash
-gcc -o archivo.out programa.c
-# gcc -o ejecutable programa.c
+gcc -o archivo.exe programa.c #para los que estan en windows
+# gcc -o ejecutable programa.c #para linux
 ```
 
 # Diferencias entre C y CPP

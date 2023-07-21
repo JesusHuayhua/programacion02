@@ -33,10 +33,17 @@ de teclado proporcionados por el mismo IDE.
 ## Organización del Repositorio
 
 - `Resumen:` son los resúmenes que eh realizado de las clases, y que también se encuentran en la wiki de este repositorio
-- `Codigos:` son los pequeños programas que eh usado para este repositorio.
+- `Codigos:` son los pequeños programas para ejemplificar lo aprendido en cada clase.
 - `Evaluaciones:` se encuentras las evaluaciones de ciclos pasadas.
 
-## ¿Porqué no uso el `using namespace std;`?
+Tener en consideración que todos los códigos de ejemplo, vienen con un archivo `compilacion.sh`. Esto para que no tengan que estar ejecutando
+a mano y porque algunas veces se hacer redireccionamiento a un `archivo.txt`; y para que puedan ejecutarlo es con el siguiente comando:
+
+```bash
+bash compilacion.sh
+```
+
+## ¿Porqué no uso el `using namespace std`?
 
 A lo largo de mis resúmenes y código de ejemplo que tengo, no voy a utilizar el clásico comando de `using namespace std`
 Esto principalmente, como una buena practica de programación, para esto voy a citar a Stroustrup's y mostrar un ejemplo de la vida real.
@@ -44,7 +51,7 @@ Esto principalmente, como una buena practica de programación, para esto voy a c
 Un caso practico donde esto no es para nada recomendable hacer uso de `using namespace std`, es si por ejemplo 
 tenemos que trabajar con [EASTL](https://github.com/electronicarts/EASTL), el cual es un reemplazo del `standard template library`, donde vamos a encontrar los
 mismos nombre de `STD`. Por lo tanto, no podríamos diferenciar si estamos usando el `EASTL` o el `STD`, además de que va a
-generar conflicto de nombres, y justamente por esta razón fue se crearon los `namespace`.
+generar conflicto de nombres, y justamente por esta razón fue que se crearon los `namespace`.
 
 ```
 Bjarne Stroustrup's(The C++ Programming Language 4th Edition):
