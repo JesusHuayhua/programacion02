@@ -1,16 +1,9 @@
-# Entrada y Salida de Datos
-
-Las definiciones de las clases para el flujo de E/S se encuentran principalmente
-en `<istream>` y `<ostream>`.
-
-Estas librerías y algunas más son las que se encuentran en la librería `<iostream>`
-
-## Ostream
+# Ostream
 
 Con esta librería vamos a poder escribir secuencias de caracteres y representaciones de los
 distintos tipos de datos. Proporcionándonos algunas `clases` para realizar estas operaciones.
 
-### Cout
+## Cout
 
 Se utiliza para producir la salida en el dispositivo de salida estándar(buffer). Y para poder
 hacer ser mostrados en la pantalla debemos de hacer uso del operador de inserción `<<`.
@@ -22,7 +15,7 @@ int ciclo = 2;
 std::cout << "Anho: " << anho << "-" << ciclo << '\n';
 ```
 
-### Cerr
+## Cerr
 
 `cerr` es el flujo de error estándar que se utilizar para dar salida a los errores. La particularidad de `cerr`
 es que no presenta un `buffer` de salida. Este se utiliza para mostrar inmediatamente los mensajes.
@@ -31,7 +24,7 @@ es que no presenta un `buffer` de salida. Este se utiliza para mostrar inmediata
 std::cerrr << "Este es un mensaje de error sin Buffer\n";
 ```
 
-### Clog
+## Clog
 
 `clog` es el flujo de error estándar con `buffer`. Este, también nos sirve para mostrar los errores, pero 
 el mensaje de error se guarda primero en un `buffer`, y se almacena en este hasta que se llene completamente.
@@ -40,7 +33,7 @@ el mensaje de error se guarda primero en un `buffer`, y se almacena en este hast
 std::clog << "Este es un mensaje de clog\n";
 ```
 
-### Comparaciones
+## Comparaciones
 
 Una forma sencilla para ver es esto es si redefinimos el mensaje de salida normal a un archivo `txt`.
 
@@ -77,7 +70,7 @@ int main(){
 
 > Recomendación se puede hacer algo similar con el buffer de `cout`, así que recomiendo averiguar como por si están interesados.
 
-### Manipuladores
+## Manipuladores
 
 Nosotros podemos manipular la salida del `cout` con sus propios [métodos](https://en.cppreference.com/w/cpp/io/ostrstream), pero están no siempre son las más cómodas de usar. Por lo tanto, vamos a usar
 la librería [iomanip](https://en.cppreference.com/w/cpp/header/iomanip) o los que viene en la librería [ios](https://en.cppreference.com/w/cpp/header/ios), la cual ya viene por defecto en la librería [iostream](https://en.cppreference.com/w/cpp/header/iostream)
@@ -86,15 +79,15 @@ la librería [iomanip](https://en.cppreference.com/w/cpp/header/iomanip) o los q
 
 #### Ios
 
-| Función                                         | Definicion                                                                            |
+| Función                                         | Definición                                                                            |
 | ----------------------------------------------- | ------------------------------------------------------------------------------------- |
 | boolalpha<br>noboolapha                         | Alterna entre la representación textual y numérica de los booleanos                   |
 | showbase <br> noshowbase                        | Controla si se utiliza el prefijo para indicar la base numérica                       |
-| internal<br> left<br> right                     | Determina la ubicación de los caracteres de relleno                                   |
+| left<br> right                     | Determina la ubicación de los caracteres de relleno                                   |
 | dec<br>hex<br>oct                               | Cambia la base utilizada para le E/S de enteros                                       |
 | fixed<br>scientific<br>defaultfloat | Cambia el formato utilizado para la E/S de coma flotante                              |
 
-#### Iomanip
+### Iomanip
 
 | Función       | Definición                                                            |
 | ------------- | --------------------------------------------------------------------- |
@@ -103,50 +96,4 @@ la librería [iomanip](https://en.cppreference.com/w/cpp/header/iomanip) o los q
 | setprecision  | Cambia la precisión de coma flotante                                  |
 | quoted        | Inserta y extrae cadenas entrecomillas con espacios incrustados       |
 
-## Istream
-
-La librería `istream`, tratan con ofrecer representaciones de cadenas de caracteres de tipos 
-incorporados y pueden ampliarse fácilmente para tratar tipos definidos por el usuario.
-
-### Cin
-
-La instancia de flujo de entrada estándar `cin`, nos proporciona una interfaz para la entrada 
-de datos del teclado. Para esto esto vamos a usar el operador `<<` (get from).
-
-```CPP
-int numero;
-char caracter;
-double flotante;
-std::cin >> numero >> caracter >> flotante;
-std::cout << numero << ' ' << caracter << ' ' << flotante[]();
-```
-
-> Dentro del archivo `compilacion.sh` se esta ingresando los datos desde un archivo `txt` y dirigiendo su salida
-> a un archivo `cin.txt`; esto para que sea mas fácil las pruebas. Con el siguiente comando es el siguiente:
-
-```bash
-cin.exe < input.txt > cin.txt
-```
-
-### Manipuladores
-
-De igual manera que para `cout`, también contamos con manipuladores para e `cin`.
-
-#### Ios
-
-| Función                                         | Definicion                                                                            |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------- |
-| dec<br>hex<br>oct                               | Cambia la base utilizada para le E/S de enteros                                       |
-
-#### Iomanip
-
-| Función       | Definición                                                            |
-| ------------- | --------------------------------------------------------------------- |
-| setw          | cambia la anchura del siguiente campo de E/S                          |
-| setfill       | Cambia el carácter de relleno                                         |
-| setprecision  | Cambia la precisión de coma flotante                                  |
-| quoted        | Inserta y extrae cadenas entrecomillas con espacios incrustados       |
-
-> tener en consideración que `quoted`, solo funciona con las variables de tipo `string`
-
-[Compilación 👈](00Compilacion.md)
+[\[01 Compilación 👈\]](01Compilacion.md)  [\[03 Cint 👉\]](03Cin.md)

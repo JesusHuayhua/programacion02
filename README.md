@@ -7,16 +7,18 @@ con las técnicas de estructuras de datos y programación orientada  a objetos.
 
 ## Programa Analítico
 
-- Introducción al Lenguaje C++
-- Entrada y Salida de Datos
-- Archivos
-- Funciones y Alcance de las variables
-- Arreglos y Punteros
-- Programación Orientada a Objetos
-- Operadores Sobrecargados
-- Herencia
-- Punteros a Objetos
-- Plantillas y Bibliotecas Estándar de Plantillas
+| Temas a tratar                                  | Clase                                                                                    |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Introducción al Lenguaje C++                    | [Clase01 - Compilación de un programa](01Compilacion.md)                                 |
+| Entrada y Salida de Datos                       | [Clase02 - `std::cout`](Resumen/02Cout.md) <br> [Clase03 - `std::cin`](Resumen/03Cin.md) |
+| Archivos                                        |                                                                                          |
+| Funciones y Alcance de las variables            |                                                                                          |
+| Arreglos y Punteros                             |                                                                                          |
+| Programación Orientada a Objetos                |                                                                                          |
+| Operadores Sobrecargados                        |                                                                                          |
+| Herencia                                        |                                                                                          |
+| Punteros a Objetos                              |                                                                                          |
+| Plantillas y Bibliotecas Estándar de Plantillas |                                                                                          |
 
 ## Software para las clases
 
@@ -24,11 +26,6 @@ Durante las clases y evaluaciones, por decisión de los profesores se estará ut
 
 Así que se aconseja que para mejorar la velocidad de uno mientras programa, practicar [typing ⌨️](https://www.typingclub.com/) y buscar los atajos 
 de teclado proporcionados por el mismo IDE.
-
-## Resumen de las clases
-
-- [Clase01 - Compilación de un programa](Resumen/00Compilacion.md)
-- [Clase02 - Entra y Salida de Datos](Resumen/01EntradaYSalidaDeDatos.md)
 
 ## Organización del Repositorio
 
@@ -92,4 +89,3 @@ Within a function, a using-directive can be safely used as a notational convenie
 
 - [C++ by The Cherno](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
 - [Prebasicos - Club de Algoritmia ESCOM](https://www.youtube.com/playlist?list=PL9wiQuRDQP0qvPPGLQYrmcUBr9UOzW_vu)
-- [C++ Tutorail by GeeksForGeeks](https://www.geeksforgeeks.org/cpp-tutorial/)

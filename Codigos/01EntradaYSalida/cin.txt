@@ -1,9 +1,0 @@
-15 c 12.8
-Numero ingresado de forma hexadecimal: 26
-Numero ingresado de forma octal: 52
-
-Leyendo el curso entre comillas: LenguajeDeProgramacion1
-
-Leyendo un determinado ancho del 'buffer': FraseInco
-
-Leyendo un determinado ancho del 'buffer' y con cierto relleno: ********FraseIncomp

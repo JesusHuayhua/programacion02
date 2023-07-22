@@ -10,8 +10,3 @@ echo "==========================================="
 echo "PASAMOS LA SALIDA DEL PROGRAMA A UN ARCHIVO"
 echo "==========================================="
 ./cout.exe > cout.txt
-echo "==========================================="
-echo "EJECUCION DEL CIN"
-echo "==========================================="
-g++ cin.cpp -o cin.exe
-./cin.exe < input.txt > cin.txt

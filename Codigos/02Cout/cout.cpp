@@ -50,9 +50,6 @@ int main(){
               std::dec << '\n'; // esto para que no siga imprimiendo en hex
 
     double promedioCiclo20231 = 10.8;
-    std::cout << "\nAlineacion de un numero con std::internal:\n";
-    std::cout << '|' << std::internal << std::setw(15) << promedioCiclo20231 << "|\n"; 
-
     std::cout << "\nAlineacion de un numero con std::left:\n";
     std::cout << '|' << std::left << std::setw(15) << promedioCiclo20231 << "|\n";
 
