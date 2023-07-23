@@ -81,10 +81,12 @@ lenguaje C se puede aplicar en CPP, pero no todo lo de CPP se puede aplicar en C
 
 Aquí, dejo un [link](https://www.geeksforgeeks.org/difference-between-c-and-c/), con las diferencias mas notables que existen entre estos 2 lenguajes de programación.
 
+> Ahora si pasemos a ver el [código](../Codigos/01Compiler/main.c)
+
 # Bibliografia
 
 - [Scaler - Compilation Process in C](https://www.scaler.com/topics/c/compilation-process-in-c/)
 - [Scaler - How is a C++ Program Compiler and Executed?](https://www.scaler.com/topics/how-to-compile-cpp/)
 - [El modelo de compilación en C](https://www.it.uc3m.es/~pedmume/asignaturas/2005/LAO/Lab2/tutorial4/www-etsi2.ugr.es/depar/ccia/mp2/old/apoyo/modelo/modelo.html)
 
-[\[01 Cout :point_right:\]](02Cout.md)
+[\[02 Cout :point_right:\]](02Cout.md)

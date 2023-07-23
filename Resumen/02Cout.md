@@ -96,4 +96,6 @@ la librería [iomanip](https://en.cppreference.com/w/cpp/header/iomanip) o los q
 | setprecision  | Cambia la precisión de coma flotante                                  |
 | quoted        | Inserta y extrae cadenas entrecomillas con espacios incrustados       |
 
+> Ahora si pasemos a ver el [código](../Codigos/02Cout/cout.cpp)
+
 [\[01 Compilación 👈\]](01Compilacion.md)  [\[03 Cint 👉\]](03Cin.md)

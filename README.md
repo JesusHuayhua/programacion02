@@ -7,18 +7,18 @@ con las técnicas de estructuras de datos y programación orientada  a objetos.
 
 ## Programa Analítico
 
-| Temas a tratar                                  | Clase                                                            |
-| ----------------------------------------------- | ---------------------------------------------------------------- |
-| Introducción al Lenguaje C++                    | [Clase01 - Compilación de un programa](Resumen/01Compilacion.md) |
-| Entrada y Salida de Datos                       | [Clase02 - `std::cout`](Resumen/02Cout.md) <br> [Clase03 - `std::cin`](Resumen/03Cin.md)                                                                 |
-| Archivos                                        |                                                                  |
-| Funciones y Alcance de las variables            |                                                                  |
-| Arreglos y Punteros                             |                                                                  |
-| Programación Orientada a Objetos                |                                                                  |
-| Operadores Sobrecargados                        |                                                                  |
-| Herencia                                        |                                                                  |
-| Punteros a Objetos                              |                                                                  |
-| Plantillas y Bibliotecas Estándar de Plantillas |                                                                  |
+| Temas a tratar                                  | Clase                                                                                    |                                    Codigo                                     |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------: |
+| Introducción al Lenguaje C++                    | [Clase01 - Compilación de un programa](Resumen/01Compilacion.md)                         |                     [`main.c`](Codigos/01Compiler/main.c)                     |
+| Entrada y Salida de Datos                       | [Clase02 - `std::cout`](Resumen/02Cout.md) <br> [Clase03 - `std::cin`](Resumen/03Cin.md) | [`cout.cpp`](Codigos/02Cout/cout.cpp) <br> [`cin.cpp`](Codigos/03Cin/cin.cpp) |
+| Archivos                                        | [Clase05 - Archivo de Texto](Resumen/04ArchivoTXT.md)                                    |                                                                               |
+| Funciones y Alcance de las variables            |                                                                                          |                                                                               |
+| Arreglos y Punteros                             |                                                                                          |                                                                               |
+| Programación Orientada a Objetos                |                                                                                          |                                                                               |
+| Operadores Sobrecargados                        |                                                                                          |                                                                               |
+| Herencia                                        |                                                                                          |                                                                               |
+| Punteros a Objetos                              |                                                                                          |                                                                               |
+| Plantillas y Bibliotecas Estándar de Plantillas |                                                                                          |                                                                               |
 
 ## Software para las clases
 
@@ -71,6 +71,7 @@ Within a function, a using-directive can be safely used as a notational convenie
 > Si bien para las evaluaciones por cuestión de tiempo, se puede complicar el uso de agregar `std::` como prefijo a cada instancia de `STD`.
 > 
 > Si podría ser recomendable su uso, pero la idea es para proyecto personales o en trabajo su uso debería de estar prohibido.
+
 # Bibliografía
 
 ## Libros 

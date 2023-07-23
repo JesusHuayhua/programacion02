@@ -59,4 +59,6 @@ Como `std::cin` es una instancia de clase, tiene varios métodos que nos van a p
 | clear()   | Se utiliza para restablecer el estado del flujo. Normalmente después de que se haiga producido un error                                                                                    |
 | eof()     | Nos permite conocer cuando se encuentra el final del archivo, lo que significa que ya no tenemos más datos que leer                                                                        |
 
-[\[02 Cout👈\]](02Cout.md)
+> Ahora si pasemos a ver el [código](../Codigos/02Cin/cin.cpp)
+
+[\[02 Cout👈\]](02Cout.md) [\[04 Archivo TXT 👉 \]](04ArchivoTXT.md)
