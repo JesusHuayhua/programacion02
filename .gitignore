@@ -9,5 +9,8 @@ dist/
 *.exe
 # Verificacion en el NetBeans y pruebas de codigos pequenos
 Pruebas/
+Enunciados/
 # Sincronizar notas de Obsidian con este carpeta
 sync.ffs_db
+# Zips
+*.zip

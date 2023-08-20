@@ -79,23 +79,23 @@ la librería [iomanip](https://en.cppreference.com/w/cpp/header/iomanip) o los q
 
 #### Ios
 
-| Función                                         | Definición                                                                            |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------- |
-| boolalpha<br>noboolapha                         | Alterna entre la representación textual y numérica de los booleanos                   |
-| showbase <br> noshowbase                        | Controla si se utiliza el prefijo para indicar la base numérica                       |
-| left<br> right                     | Determina la ubicación de los caracteres de relleno                                   |
-| dec<br>hex<br>oct                               | Cambia la base utilizada para le E/S de enteros                                       |
-| fixed<br>scientific<br>defaultfloat | Cambia el formato utilizado para la E/S de coma flotante                              |
+| Función                             | Definición                                                          |
+| ----------------------------------- | ------------------------------------------------------------------- |
+| boolalpha<br>noboolapha             | Alterna entre la representación textual y numérica de los booleanos |
+| showbase <br> noshowbase            | Controla si se utiliza el prefijo para indicar la base numérica     |
+| left<br> right                      | Determina la ubicación de los caracteres de relleno                 |
+| dec<br>hex<br>oct                   | Cambia la base utilizada para le E/S de enteros                     |
+| fixed<br>scientific<br>defaultfloat | Cambia el formato utilizado para la E/S de coma flotante            |
 
 ### Iomanip
 
-| Función       | Definición                                                            |
-| ------------- | --------------------------------------------------------------------- |
-| setw          | cambia la anchura del siguiente campo de E/S                          |
-| setfill       | Cambia el carácter de relleno                                         |
-| setprecision  | Cambia la precisión de coma flotante                                  |
-| quoted        | Inserta y extrae cadenas entrecomillas con espacios incrustados       |
+| Función      | Definición                                                      |
+| ------------ | --------------------------------------------------------------- |
+| setw         | cambia la anchura del siguiente campo de E/S                    |
+| setfill      | Cambia el carácter de relleno                                   |
+| setprecision | Cambia la precisión de coma flotante                            |
+| quoted       | Inserta y extrae cadenas entrecomillas con espacios incrustados |
 
-> Ahora si pasemos a ver el [código](../Codigos/02Cout/cout.cpp)
+> Ahora si pasemos a ver el [código](../../Codigos/TemasPasados/02Cout/cout.cpp)
 
 [\[01 Compilación 👈\]](01Compilacion.md)  [\[03 Cint 👉\]](03Cin.md)

@@ -7,18 +7,27 @@ con las técnicas de estructuras de datos y programación orientada  a objetos.
 
 ## Programa Analítico
 
-| Temas a tratar                                  | Clase                                                                                    |                                    Codigo                                     |
-| ----------------------------------------------- | ---------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------: |
-| Introducción al Lenguaje C++                    | [Clase01 - Compilación de un programa](Resumen/01Compilacion.md)                         |                     [`main.c`](Codigos/01Compiler/main.c)                     |
-| Entrada y Salida de Datos                       | [Clase02 - `std::cout`](Resumen/02Cout.md) <br> [Clase03 - `std::cin`](Resumen/03Cin.md) | [`cout.cpp`](Codigos/02Cout/cout.cpp) <br> [`cin.cpp`](Codigos/03Cin/cin.cpp) |
-| Archivos                                        | [Clase05 - Archivo de Texto](Resumen/04ArchivoTXT.md)                                    |                                                                               |
-| Funciones y Alcance de las variables            |                                                                                          |                                                                               |
-| Arreglos y Punteros                             |                                                                                          |                                                                               |
-| Programación Orientada a Objetos                |                                                                                          |                                                                               |
-| Operadores Sobrecargados                        |                                                                                          |                                                                               |
-| Herencia                                        |                                                                                          |                                                                               |
-| Punteros a Objetos                              |                                                                                          |                                                                               |
-| Plantillas y Bibliotecas Estándar de Plantillas |                                                                                          |                                                                               |
+> Desde el 2023-2, los siguiente temas se dejaron de dictar, puesto que ahora se
+> dictan en un curso previo:
+
+| Temas que ya no enseñan      | Clase                                                                                                        |                                                 Codigo                                                  |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------ | :-----------------------------------------------------------------------------------------------------: |
+| Introducción al Lenguaje C++ | [Compilación de un programa](Resumen/ResumenTemasPasados/01Compilacion.md)                                   |                           [`main.c`](Codigos/TemasPasados/01Compiler/main.c)                            |
+| Entrada y Salida de Datos    | [`std::cout`](Resumen/ResumenTemasPasados/02Cout.md) <br> [`std::cin`](Resumen/ResumenTemasPasados/03Cin.md) | [`cout.cpp`](Codigos/TemasPasados/02Cout/cout.cpp) <br> [`cin.cpp`](Codigos/TemasPasados/03Cin/cin.cpp) |
+| Archivos                     | [Archivo de Texto](Resumen/ResumenTemasPasados/04Archivo.md)                                                 |                     [`archivos.cpp`](Codigos/TemasPasados/04Archivos/archivos.cpp)                      |
+
+<h3> Nuevo temario</h3>
+
+| Temas a tratar                                  | Clase | Codigo |
+| ----------------------------------------------- | :---: | :----: |
+| Funciones y Alcance de las variables            |       |        |
+| Arreglos y Punteros                             |       |        |
+| Programación Orientada a Objetos                |       |        |
+| Operadores Sobrecargados                        |       |        |
+| Herencia                                        |       |        |
+| Punteros a Objetos                              |       |        |
+| Plantillas y Bibliotecas Estándar de Plantillas |       |        |
+| Lenguaje de Programación JAVA                   |       |        |
 
 ## Software para las clases
 
@@ -33,11 +42,21 @@ de teclado proporcionados por el mismo IDE.
 - `Codigos:` son los pequeños programas para ejemplificar lo aprendido en cada clase.
 - `Evaluaciones:` se encuentras las evaluaciones de ciclos pasadas.
 
-Tener en consideración que todos los códigos de ejemplo, vienen con un archivo `compilacion.sh`. Esto para que no tengan que estar ejecutando
+Tener en consideración que todos los códigos de ejemplo de los `TemasPasados`, vienen con un archivo `compilacion.sh`. Esto para que no tengan que estar ejecutando
 a mano y porque algunas veces se hacer redireccionamiento a un `archivo.txt`; y para que puedan ejecutarlo es con el siguiente comando:
 
 ```bash
 bash compilacion.sh
+```
+
+Para los ejemplo de los temas que continuan en el temario estaré usando un `makefile`,
+el cual para ejecutarlo tienen que verificar si esta instalado en su computador
+en caso contario, tendrá que instalarlo y para que pueda ejecutarlo es con los
+siguientes comandos:
+
+```bash
+make
+./nombre_del_ejectuable_de_la_carpeta.exe
 ```
 
 ## ¿Porqué no uso el `using namespace std`?
@@ -92,4 +111,14 @@ Within a function, a using-directive can be safely used as a notational convenie
 ## Videos
 
 - [C++ by The Cherno](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
+<!--
 - [Prebasicos - Club de Algoritmia ESCOM](https://www.youtube.com/playlist?list=PL9wiQuRDQP0qvPPGLQYrmcUBr9UOzW_vu)
+-->
+## Material extra
+
+> Aqui va a estar material de amigos que tambien tienen un resumen del curso, ya sea
+> antes o despues del plan de estudios, así como las paginas recomendadas por los profesores
+> del curso
+
+- [Gabo52](https://github.com/gabo52/LenguajeDeProgramacion1)
+- [Resumen del profesor Guanira(wani)](https://agora.pucp.edu.pe/inf2170681/)

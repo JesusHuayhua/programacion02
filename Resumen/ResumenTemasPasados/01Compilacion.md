@@ -81,7 +81,7 @@ lenguaje C se puede aplicar en CPP, pero no todo lo de CPP se puede aplicar en C
 
 Aquí, dejo un [link](https://www.geeksforgeeks.org/difference-between-c-and-c/), con las diferencias mas notables que existen entre estos 2 lenguajes de programación.
 
-> Ahora si pasemos a ver el [código](../Codigos/01Compiler/main.c)
+> Ahora si pasemos a ver el [código](../../Codigos/TemasPasados/01Compiler/main.c)
 
 # Bibliografia
 
