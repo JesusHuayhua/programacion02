@@ -1,0 +1,19 @@
+==============================
+Impresion de los productos
+Nombre del porducto:          Aceite
+Precio:                       9.5
+Stock:                        20
+Nombre del porducto:          Aceite
+Precio:                       10.5
+Stock:                        10
+==============================
+Lectura de un producto
+Nombre del porducto:          Arroz
+Precio:                       10
+Stock:                        5
+==============================
+Suma de Productos
+Nombre del porducto:          Aceite
+Precio:                       10.5
+Stock:                        30
+==============================
