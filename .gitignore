@@ -1,9 +1,9 @@
 #Archivos generados por NetBeans
-Makile
+Makefile
 build/
 nbproject/
 dist/
-*.inc/
+*.inc
 .dep.inc
 *gch
 # Extensiones de los file
