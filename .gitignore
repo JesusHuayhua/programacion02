@@ -4,7 +4,6 @@ build/
 nbproject/
 dist/
 *.inc
-.dep.inc
 *gch
 # Extensiones de los file
 .vscode/
