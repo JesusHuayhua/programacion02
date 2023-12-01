@@ -1,33 +1,36 @@
-# Lenguaje de Programación 1
+# Programación 2
 
 ![](Img/CPPmeme.jpeg)
 
-En el curso veremos las herramientas proporcionadas por el lenguaje `C++`, implementando programas
-con las técnicas de estructuras de datos y programación orientada  a objetos.
+En el curso veremos las herramientas proporcionadas por el lenguaje `C++`, 
+implementando programas con las técnicas de estructuras de datos y 
+programación orientada  a objetos.
+
+Así mismo, una introducción al lenguaje de programación JAVA.
 
 ## Programa Analítico
 
-> Desde el 2023-2, los siguiente temas se dejaron de dictar, puesto que ahora se
-> dictan en un curso previo:
+> [!IMPORTANT]
+> Desde el 2023-2, el curso recibio un cambio en los temas a tratar. Por lo tanto,
+> en este repositorio solo contendrá información del nuevo plan de estudios,
+> así como sus evaluciones.
+>
+> Las evaluaciones de los ciclos previos al 2023-2, se encuentran en el respotirio
+> de [Gabo52](https://github.com/gabo52/LenguajeDeProgramacion1)
 
-| Temas que ya no enseñan      | Clase                                                                                                        |                                                 Codigo                                                  |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------ | :-----------------------------------------------------------------------------------------------------: |
-| Introducción al Lenguaje C++ | [Compilación de un programa](Resumen/ResumenTemasPasados/01Compilacion.md)                                   |                           [`main.c`](Codigos/TemasPasados/01Compiler/main.c)                            |
-| Entrada y Salida de Datos    | [`std::cout`](Resumen/ResumenTemasPasados/02Cout.md) <br> [`std::cin`](Resumen/ResumenTemasPasados/03Cin.md) | [`cout.cpp`](Codigos/TemasPasados/02Cout/cout.cpp) <br> [`cin.cpp`](Codigos/TemasPasados/03Cin/cin.cpp) |
-| Archivos                     | [Archivo de Texto](Resumen/ResumenTemasPasados/04Archivo.md)                                                 |                     [`archivos.cpp`](Codigos/TemasPasados/04Archivos/archivos.cpp)                      |
 
 <h3> Nuevo temario</h3>
 
-| Temas a tratar                                  | Clase | Codigo |
-| ----------------------------------------------- | :---: | :----: |
-| Funciones y Alcance de las variables            |       |        |
-| Arreglos y Punteros                             |       |        |
-| Programación Orientada a Objetos                |       |        |
-| Operadores Sobrecargados                        |       |        |
-| Herencia                                        |       |        |
-| Punteros a Objetos                              |       |        |
-| Plantillas y Bibliotecas Estándar de Plantillas |       |        |
-| Lenguaje de Programación JAVA                   |       |        |
+| Temas a tratar                                  | Resumen | Codigo |
+| ----------------------------------------------- | :-----: | :----: |
+| Funciones y Alcance de las variables            |         |        |
+| Arreglos y Punteros                             |         |        |
+| Programación Orientada a Objetos                |         |        |
+| Operadores Sobrecargados                        |         |        |
+| Herencia                                        |         |        |
+| Punteros a Objetos                              |         |        |
+| Plantillas y Bibliotecas Estándar de Plantillas |         |        |
+| Lenguaje de Programación JAVA                   |         |        |
 
 ## Software para las clases
 
@@ -42,22 +45,6 @@ de teclado proporcionados por el mismo IDE.
 - `Codigos:` son los pequeños programas para ejemplificar lo aprendido en cada clase.
 - `Evaluaciones:` se encuentras las evaluaciones de ciclos pasadas.
 
-Tener en consideración que todos los códigos de ejemplo de los `TemasPasados`, vienen con un archivo `compilacion.sh`. Esto para que no tengan que estar ejecutando
-a mano y porque algunas veces se hacer redireccionamiento a un `archivo.txt`; y para que puedan ejecutarlo es con el siguiente comando:
-
-```bash
-bash compilacion.sh
-```
-
-Para los ejemplo de los temas que continuan en el temario estaré usando un `makefile`,
-el cual para ejecutarlo tienen que verificar si esta instalado en su computador
-en caso contario, tendrá que instalarlo y para que pueda ejecutarlo es con los
-siguientes comandos:
-
-```bash
-make
-./nombre_del_ejectuable_de_la_carpeta.exe
-```
 
 ## ¿Porqué no uso el `using namespace std`?
 
@@ -93,7 +80,8 @@ Within a function, a using-directive can be safely used as a notational convenie
 
 # Bibliografía
 
-## Libros 
+## Libros
+
 - [The C++ Programming Language, 4th Edition](https://www.amazon.com/C-Programming-Language-4th/dp/0321563840)
 - [Programming: Principles and Practice Using C++(2nd Edition)](https://www.amazon.com/Programming-Principles-Practice-Using-2nd/dp/0321992784/)
 - [Effective Modern C++](https://www.oreilly.com/library/view/effective-modern-c/9781491908419/)
@@ -116,9 +104,6 @@ Within a function, a using-directive can be safely used as a notational convenie
 -->
 ## Material extra
 
-> Aqui va a estar material de amigos que tambien tienen un resumen del curso, ya sea
-> antes o despues del plan de estudios, así como las paginas recomendadas por los profesores
-> del curso
-
 - [Gabo52](https://github.com/gabo52/LenguajeDeProgramacion1)
 - [Resumen del profesor Guanira(wani)](https://agora.pucp.edu.pe/inf2170681/)
+- [Github del profesor Eramos Gomez](https://github.com/erasmoGomez/inf281)
