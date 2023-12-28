@@ -23,10 +23,10 @@ Así mismo, una introducción al lenguaje de programación JAVA.
 
 | Temas a tratar                                  | Resumen | Codigo |
 | ----------------------------------------------- | :-----: | :----: |
+| Operadores Sobrecargados                        |         |        |
 | Funciones y Alcance de las variables            |         |        |
 | Arreglos y Punteros                             |         |        |
 | Programación Orientada a Objetos                |         |        |
-| Operadores Sobrecargados                        |         |        |
 | Herencia                                        |         |        |
 | Punteros a Objetos                              |         |        |
 | Plantillas y Bibliotecas Estándar de Plantillas |         |        |
