@@ -5,6 +5,7 @@ nbproject/
 dist/
 *.inc
 *gch
+*.o
 # Extensiones de los file
 .vscode/
 *.exe

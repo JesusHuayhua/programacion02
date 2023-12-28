@@ -54,17 +54,17 @@ int main() {
 > Los tipos de funciones usadas para la sobrecarga de funciones pueden ser *miembro* o 
 > *globales*, pero se va a trabajar con funciones *globales*. La diferencia entre 
 > estos tipos de funciones se verán en el siguiente capítulo.
+
+>  [!IMPORTANT]
+>  Algo importante a tener en cuenta es que los operadores más usados en el curso son:
+>  
+>  1. Asignación
+>  2. Incremento y decremento
+>  3. Comparación
+>  4. Lectura y escritura para archivos
 > 
-> >  [!IMPORTANT]
-> >  Algo importante a tener en cuenta es que los operadores más usados en el curso son:
-> >  
-> >  1. Asignación
-> >  2. Incremento y decremento
-> >  3. Comparación
-> >  4. Lectura y escritura para archivos
-> > 
-> >  Por lo tanto, se recomienda tener anotado la definición de clase exterior de 
-> >  estos operadores. Las cuales pueden ser encontradas en 
-> > [cppreference](https://en.cppreference.com/w/cpp/language/operators)
-> 
+>  Por lo tanto, se recomienda tener anotado la definición de clase exterior de 
+>  estos operadores. Las cuales pueden ser encontradas en 
+> [cppreference](https://en.cppreference.com/w/cpp/language/operators)
+ 
  

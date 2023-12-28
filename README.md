@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Programación 2
 
 ![](Img/CPPmeme.jpeg)
@@ -11,16 +10,16 @@ Así mismo, una introducción al lenguaje de programación JAVA.
 
 ## Programa Analítico
 
-| Temas a tratar                                  |                            Teoría                            | Código |
-| ----------------------------------------------- | :----------------------------------------------------------: | :----: |
-| Funciones y Alcance de las variables            | [i don't know](Resumen/01funcionesYAlcanceDeLasVariables.md) |        |
-| Arreglos y Punteros                             |                                                              |        |
-| Programación Orientada a Objetos                |                                                              |        |
-| Operadores Sobrecargados                        |                                                              |        |
-| Herencia                                        |                                                              |        |
-| Punteros a Objetos                              |                                                              |        |
-| Plantillas y Bibliotecas Estándar de Plantillas |                                                              |        |
-| Lenguaje de Programación JAVA                   |                                                              |        |
+| Temas a tratar                                  |                         Teoría                          |                        Código                        |
+| ----------------------------------------------- | :-----------------------------------------------------: | :--------------------------------------------------: |
+| Operadores Sobrecargados                        |     [resumen](Resumen/01operadoresSobrecargados.md)     | [codigo](Codigos/01OperadoresSobrecargados/main.cpp) |
+| Funciones y Alcance de las variables            | [resumen](Resumen/02funcionesYAlcanceDeLasVariables.md) |                                                      |
+| Arreglos y Punteros                             |                                                         |                                                      |
+| Programación Orientada a Objetos                |                                                         |                                                      |
+| Herencia                                        |                                                         |                                                      |
+| Punteros a Objetos                              |                                                         |                                                      |
+| Plantillas y Bibliotecas Estándar de Plantillas |                                                         |                                                      |
+| Lenguaje de Programación JAVA                   |                                                         |                                                      |
 
 > [!IMPORTANT]
 > Desde el 2023-2, el curso recibio un cambio en los temas a tratar. Por lo tanto,
