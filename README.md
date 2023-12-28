@@ -10,6 +10,17 @@ Así mismo, una introducción al lenguaje de programación JAVA.
 
 ## Programa Analítico
 
+| Temas a tratar                                  |                            Teoría                            | Código |
+| ----------------------------------------------- | :----------------------------------------------------------: | :----: |
+| Funciones y Alcance de las variables            | [i don't know](Resumen/01funcionesYAlcanceDeLasVariables.md) |        |
+| Arreglos y Punteros                             |                                                              |        |
+| Programación Orientada a Objetos                |                                                              |        |
+| Operadores Sobrecargados                        |                                                              |        |
+| Herencia                                        |                                                              |        |
+| Punteros a Objetos                              |                                                              |        |
+| Plantillas y Bibliotecas Estándar de Plantillas |                                                              |        |
+| Lenguaje de Programación JAVA                   |                                                              |        |
+
 > [!IMPORTANT]
 > Desde el 2023-2, el curso recibio un cambio en los temas a tratar. Por lo tanto,
 > en este repositorio solo contendrá información del nuevo plan de estudios,
@@ -17,20 +28,6 @@ Así mismo, una introducción al lenguaje de programación JAVA.
 >
 > Las evaluaciones de los ciclos previos al 2023-2, se encuentran en el respotirio
 > de [Gabo52](https://github.com/gabo52/LenguajeDeProgramacion1)
-
-
-<h3> Nuevo temario</h3>
-
-| Temas a tratar                                  | Resumen | Codigo |
-| ----------------------------------------------- | :-----: | :----: |
-| Funciones y Alcance de las variables            |         |        |
-| Arreglos y Punteros                             |         |        |
-| Programación Orientada a Objetos                |         |        |
-| Operadores Sobrecargados                        |         |        |
-| Herencia                                        |         |        |
-| Punteros a Objetos                              |         |        |
-| Plantillas y Bibliotecas Estándar de Plantillas |         |        |
-| Lenguaje de Programación JAVA                   |         |        |
 
 ## Software para las clases
 
@@ -43,9 +40,9 @@ de teclado proporcionados por el mismo IDE.
 
 - `Resumen:` son los resúmenes que eh realizado de las clases, y que también se encuentran en la wiki de este repositorio
 - `Codigos:` son los pequeños programas para ejemplificar lo aprendido en cada clase.
-- `Evaluaciones:` se encuentras las evaluaciones de ciclos pasadas.
+- `Evaluaciones:` se encuentras las evaluaciones de ciclos pasados.
 
-
+<!--
 ## ¿Porqué no uso el `using namespace std`?
 
 A lo largo de mis resúmenes y código de ejemplo que tengo, no voy a utilizar el clásico comando de `using namespace std`
@@ -76,7 +73,7 @@ Within a function, a using-directive can be safely used as a notational convenie
 
 > Si bien para las evaluaciones por cuestión de tiempo, se puede complicar el uso de agregar `std::` como prefijo a cada instancia de `STD`.
 > 
-> Si podría ser recomendable su uso, pero la idea es para proyecto personales o en trabajo su uso debería de estar prohibido.
+> Si podría ser recomendable su uso, pero la idea es para proyecto personales o en trabajo su uso debería de estar prohibido.-->
 
 # Bibliografía
 
