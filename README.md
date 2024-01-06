@@ -42,7 +42,7 @@ de teclado proporcionados por el mismo IDE.
 - `Codigos:` son los pequeños programas para ejemplificar lo aprendido en cada clase.
 - `Evaluaciones:` se encuentras las evaluaciones de ciclos pasados.
 
-<!--
+
 ## ¿Porqué no uso el `using namespace std`?
 
 A lo largo de mis resúmenes y código de ejemplo que tengo, no voy a utilizar el clásico comando de `using namespace std`
@@ -53,27 +53,35 @@ tenemos que trabajar con [EASTL](https://github.com/electronicarts/EASTL), el cu
 mismos nombre de `STD`. Por lo tanto, no podríamos diferenciar si estamos usando el `EASTL` o el `STD`, además de que va a
 generar conflicto de nombres, y justamente por esta razón fue que se crearon los `namespace`.
 
-```
-Bjarne Stroustrup's(The C++ Programming Language 4th Edition):
+> [!IMPORTANT]
+> 
+> Bjarne Stroustrup's(The C++ Programming Language 4th Edition):
+> 
+> For simplicity, I will rarely use the std:: prefix explicitly in examples.
+> 
+> 
+> It is generally in poor taste to dump every name from a namespace into the global namespace.
+> However, in this book, I use the standard library almost exclusively and it is good to know what it offers.
+> So, I don’t prefix every use of a standard library name with std::.
+> 
+> 
+> Often, we like to use every name from a namespace without qualification.
+> That can be achieved by providing a using-declaration for each name from the namespace,
+> but that’s tedious and requires extra work each time a new name is added to or removed from the namespace. 
+> Alternatively, we can use a using-directive to request that every name from a namespace be accessible in our scope without qualification.
+> 
+> 
+> Using a using-directive to make names from a frequently used and well-known library available without qualification is a popular technique for simplifying code.
+> This is the technique used to access standard-library facilities throughout this book.
+> 
+> 
+> Within a function, a using-directive can be safely used as a notational convenience,
+> but care should be taken with global using-directives because overuse can lead to exactly the name clashes that namespaces were introduced to avoid.
 
-For simplicity, I will rarely use the std:: prefix explicitly in examples.
-
-
-It is generally in poor taste to dump every name from a namespace into the global namespace. However, in this book, I use the standard library almost exclusively and it is good to know what it offers. So, I don’t prefix every use of a standard library name with std::.
-
-
-Often, we like to use every name from a namespace without qualification. That can be achieved by providing a using-declaration for each name from the namespace, but that’s tedious and requires extra work each time a new name is added to or removed from the namespace. Alternatively, we can use a using-directive to request that every name from a namespace be accessible in our scope without qualification.
-
-
-Using a using-directive to make names from a frequently used and well-known library available without qualification is a popular technique for simplifying code. This is the technique used to access standard-library facilities throughout this book.
-
-
-Within a function, a using-directive can be safely used as a notational convenience, but care should be taken with global using-directives because overuse can lead to exactly the name clashes that namespaces were introduced to avoid.
-```
-
+> [!TIP]
 > Si bien para las evaluaciones por cuestión de tiempo, se puede complicar el uso de agregar `std::` como prefijo a cada instancia de `STD`.
 > 
-> Si podría ser recomendable su uso, pero la idea es para proyecto personales o en trabajo su uso debería de estar prohibido.-->
+> Si podría ser recomendable su uso, pero la idea es para proyecto personales o en trabajo su uso debería de estar prohibido.
 
 # Bibliografía
 
@@ -214,4 +222,4 @@ Within a function, a using-directive can be safely used as a notational convenie
 - [Gabo52](https://github.com/gabo52/LenguajeDeProgramacion1)
 - [Resumen del profesor Guanira(wani)](https://agora.pucp.edu.pe/inf2170681/)
 - [Github del profesor Eramos Gomez](https://github.com/erasmoGomez/inf281)
->>>>>>> c8137bbeed1cc39d26b4eb4a850c478bab8ab1bb
+
