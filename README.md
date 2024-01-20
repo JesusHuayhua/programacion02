@@ -104,6 +104,8 @@ generar conflicto de nombres, y justamente por esta razón fue que se crearon lo
 ## Videos
 
 - [C++ by The Cherno](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
+- [Pointer in C/C++](https://www.youtube.com/watch?v=zuegQmMdy8M)
+- [Memoría RAM: stack y heap](https://www.youtube.com/watch?v=a17EyMjGcdc&list=PLb_E6BNMg5j65aaxqcuz93MnGA06BYrhr&index=8)
 <!--
 - [Prebasicos - Club de Algoritmia ESCOM](https://www.youtube.com/playlist?list=PL9wiQuRDQP0qvPPGLQYrmcUBr9UOzW_vu)
 -->
