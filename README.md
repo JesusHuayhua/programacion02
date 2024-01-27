@@ -14,7 +14,7 @@ Así mismo, una introducción al lenguaje de programación JAVA.
 | ----------------------------------------------- | :-----------------------------------------------------: | :----------------------------------------------------------: |
 | Operadores Sobrecargados                        |     [resumen](Resumen/01operadoresSobrecargados.md)     |     [codigo](Codigos/01OperadoresSobrecargados/main.cpp)     |
 | Funciones y Alcance de las variables            | [resumen](Resumen/02funcionesYAlcanceDeLasVariables.md) | [codigo](Codigos/02funcionesYAlcanceDeLasVariables/main.cpp) |
-| Arreglos y Punteros                             |                                                         |                                                              |
+| Arreglos y Punteros                             |        [resumen](Resumen/03ArreglosYPunteros.md)        |                                                              |
 | Programación Orientada a Objetos                |                                                         |                                                              |
 | Herencia                                        |                                                         |                                                              |
 | Punteros a Objetos                              |                                                         |                                                              |
