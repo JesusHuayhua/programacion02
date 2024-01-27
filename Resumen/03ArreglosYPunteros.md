@@ -1,7 +1,7 @@
 <h1> Punteros </h1>
 
 - [Introducción](#introducción)
-  - [Punteros y Memoria](#punteros-y-memoria)
+- [Punteros y Memoria](#punteros-y-memoria)
   - [Ventajas](#ventajas)
   - [Desventajas](#desventajas)
   - [Declaración de punteros](#declaración-de-punteros)
@@ -42,6 +42,12 @@
     - [Convertir string a formato numerico](#convertir-string-a-formato-numerico)
 - [Pointers and Structures](#pointers-and-structures)
 - [Puntero `void`](#puntero-void)
+  - [Casteo de una variable](#casteo-de-una-variable)
+    - [Casting tradicional](#casting-tradicional)
+    - [static\_cast](#static_cast)
+    - [dynamic\_cast](#dynamic_cast)
+    - [const\_cast](#const_cast)
+    - [reinterpret\_cast](#reinterpret_cast)
 
 # Introducción 
 
@@ -49,11 +55,11 @@ La definición más elementar de un puntero, es una variable, que puede almacena
 la dirección de una posición de memoria, y para poder comprender mejor esto debemos
 de conocer primero como se gestiona la memoria en un programa en C++.
 
-## Punteros y Memoria
+# Punteros y Memoria
 
 Al momento de compilar un programa en C++, este trabaja con 3 tipos de memoria.
 
-<h3> Estática/Global </h3>
+<h2> Estática/Global </h2>
 
 Las variables declaradas estaticamente o globalmente, pertenecen al mismo
 bloque de memoria; durando toda la ejecución del programa.
@@ -61,12 +67,12 @@ Siendo su diferencia, que se puede tener acceso a las variables globales en cual
 momento y en cualquier función; en cambio, las estáticas se limitan a la función
 que las define.
 
-<h3> Automatica </h3>
+<h2> Automatica </h2>
 
 Estas son las variables declaradas dentro de una función cuando esta es llamada;
 por lo tanto su tiempo de ejecución también es el tiempo de ejecución de la función.
 
-<h3> Dinámica </h3>
+<h2> Dinámica </h2>
 
 Espacio de la memoria de a la cual se puede asignar un puntero, donde este hace
 referencia a la memoria, y existiendo hasta que uno la libere.
@@ -91,10 +97,10 @@ facilmente con los punteros.
 
 Una desventaja del uso de los punteros, es el uso de expresiones compactas, las 
 cuales no suelen muy descriptivas de lo que se está realizando; asiendo que el programador
-tenga que ir decifrando.
+tenga que ir decifrando.s
 
 ```CPP
-char *names[] = {"Hello","Errant","Programmer"};
+char *names[] = {"Hello","Jesus","Huayhua"};
 // Notación de punteros
 std::cout << *(*(names+1)+2) << std::endl;
 // Notación de array
@@ -136,7 +142,7 @@ int num = 0;
 int *ptr;
 ptr = num;
 ```
-<img src="Img/punteros/imagen1.png">
+![](Img/pointer1.png)
 
 > Recordar:
 >
@@ -161,7 +167,7 @@ y es este proceso que se le conoce como referido o desreferenciar un puntero.
 int num = 5;
 int *ptr = &num;
 
-std::cout << "Su valor es: " << *ptr <<std::endl; // Visualizamos en pantaña 5
+std::cout << "Su valor es: " << *ptr <<std::endl; // 5
 ```
 
 Este mismo procedimiento es que se utiliza, para hacer cambios a la variable a la
@@ -171,10 +177,12 @@ cual hace referencia.
 int num = 0;
 int *ptr = &num;
 
-ptr = 200;
+*ptr = 200;
 
-std::cout << "La dirección de memoria es: " << &num << ", su valor es: " << num <<std::endl;
-std::cout << "La dirección de memoria es: " << &ptr << ", su valor es: " << ptr <<std::endl;
+std::cout << "La dirección de memoria es: " << &num // 0x7ffc11d03bec
+          << ", su valor es: " << num <<std::endl;  // 200
+std::cout << "La dirección de memoria es: " << &ptr // 0x7ffc11d03bf0
+          << ", su valor es: " << ptr <<std::endl;  //0x77ffc11d03bec
 ```
 ## Operaciones con punteros
 
@@ -202,26 +210,23 @@ este sumando.
 int vector[] = {2021,2022,2023};
 int *ptr = vector;
 
-std::cout << "Ptr: " << *ptr<<std::endl;
+std::cout << "Ptr: " << *ptr<<std::endl; // 2021
 ptr += 1;
-std::cout << "Ptr: " << *ptr<<std::endl;
+std::cout << "Ptr: " << *ptr<<std::endl; // 2022
 ptr += 1;
-std::cout << "Ptr: " << *ptr<<std::endl;
+std::cout << "Ptr: " << *ptr<<std::endl; // 2023
 // Tambien podemos usar el sizeof() para indicar la cantidad a incrementar
 // Ejemplo 2
 int vector[] = {2021,2022,2024,2025,2026,2027,2028,2029,2030,2031,2032,2033};
 int *ptr = vector;
 double a = 1;
 
-std::cout << "Ptr: " << *ptr<<std::endl;
+std::cout << "Ptr: " << *ptr<<std::endl; // 2021
 ptr += sizeof(double); //Otra forma ptr += sizeof(a);
-std::cout << "Ptr: " << *ptr<<std::endl;
+std::cout << "Ptr: " << *ptr<<std::endl; // 2030
 ```
 
-> Para los punteros de tipo `void`, es mejore revisarlo si su compilador lo acepta,
-> no todos los compiladores lo permiten.
-
-2. Sustraer un entero a un puntero
+1. Sustraer un entero a un puntero
 
 De forma similar, al restar un entereo a un puntero, este se decrementa en la
 misma cantidad de `bits` del tipo de variable que se este rezando.
@@ -231,18 +236,18 @@ misma cantidad de `bits` del tipo de variable que se este rezando.
 int vector[] = {2021,2022,2023};
 int *ptr = vector + 2;
 
-std::cout << "Ptr: " << *ptr<<std::endl;
+std::cout << "Ptr: " << *ptr<<std::endl; // 2023
 ptr--;
-std::cout << "Ptr: " << *ptr<<std::endl;
+std::cout << "Ptr: " << *ptr<<std::endl; // 2022
 ptr--;
-std::cout << "Ptr: " << *ptr<<std::endl;
+std::cout << "Ptr: " << *ptr<<std::endl; // 2021
 // Tambien podemos usar el sizeof() para indicar la cantidad a incrementar
 // Ejemplo 2
 int vector[] = {2021,2022,2024,2025,2026,2027,2028,2029,2030,2031,2032,2033};
 int *ptr = vector + 8;
-std::cout << "Ptr: " << *ptr<<std::endl; 
+std::cout << "Ptr: " << *ptr<<std::endl;  // 2030
 ptr -= sizeof(double); //Otra forma ptr -= sizeof(a);
-std::cout << "Ptr: " << *ptr<<std::endl;
+std::cout << "Ptr: " << *ptr<<std::endl; // 2021
 ```
 
 3. Sustraer 2 punteros entre sí
@@ -256,16 +261,16 @@ int vector[] = {47,20,7};
 int *p0 = vector;
 int *p1 = vector + 1;
 int *p2 = vector + 2;
-std::cout << " P2 - P0 " << p2 - p0 << std::endl;
-std::cout << " P2 - P1 " << p2 - p1 << std::endl;
-std::cout << " P0 - P1 " << p0 - p1 << std::endl;
+std::cout << " P2 - P0 " << p2 - p0 << std::endl; // 2
+std::cout << " P2 - P1 " << p2 - p1 << std::endl; // 1
+std::cout << " P0 - P1 " << p0 - p1 << std::endl; // -1
 ```
 
 Para poder restar el valor al cual esa referencia la dirección de memoria que tiene
 almacenanda, tenemoes que hacer dereferenciarlo.
 
 ```CPP
-std::cout << " P2 - P0 " << *p2 - *p0 << std::endl;
+std::cout << " P2 - P0 " << *p2 - *p0 << std::endl; // -40
 ```
 
 4. Comparar punteros
@@ -285,7 +290,7 @@ if(*p1 < *p2){ // 1 < 2
 }
 ```
 
-<img src="Img/punteros/imagen2.png">
+![](Img/pointer2.png)
 
 ## Uso de los punteros
 
@@ -337,7 +342,7 @@ Pero también se puede usar el `NULL`, como valor `0`.
 
 ```CPP
 int num = NULL + 10;
-std::cout << num << std::endl;
+std::cout << num << std::endl; // 10
 ```
 
 El compilador nos indicará que se esta usando el `NULL`, en una operación
@@ -436,6 +441,7 @@ memoría `RAM` y los `punteros`:
 
 - *Stack* 
 - *Heap*
+
 ## Memoría Stack
 
 Esta parte de la memoría es definida por nuestro sistema operativo cuando se
@@ -466,7 +472,7 @@ int main(){
 
 Graficamente el funcionamiento de la memoría `Stack`, se vería de la siguiente manera:
 
-<img src = "Img/punteros/stack1.png">
+![](Img/stack1.png)
 
 1. Se ejecuta el programa, y se aloja en la memoría el función *main*
 
@@ -475,9 +481,9 @@ Graficamente el funcionamiento de la memoría `Stack`, se vería de la siguiente
 3. Una vez terminado, se elimina automaticamente de la memoría, y se retorna a la 
 ejecución de la función main.
 
-4. De la misma forma para la función *foo2()*
+1. De la misma forma para la función *foo2()*
 
-5. Se termina de ejecutar el programa, y *main()* también es eliminada de la memoría.
+2. Se termina de ejecutar el programa, y *main()* también es eliminada de la memoría.
 
 > Recordar que las variables asociadas a cierta función, solo van a funcionar dentro de la misma función
 > no puede ser usada en otra función, para nuestro ejemplo la función *foo()* ni *foo2()*,
@@ -495,7 +501,7 @@ Tener en consideración, que cuando se asigne memoría con `new` no se verá eli
 en ningún momento, a menos que la eliminemos manualmente con la función `delete`.
 Incluso si la función que donde fue asignada ya fue eliminada del `Stack`.
 
-<img src = "Img/punteros/heap1.png">
+![](Img/heap1.png)
 
 Por lo tanto, siempre se va a tener cuidado con la asignación de memoría a un puntero;
 porque si el puntero apunta a un nuevo valor, y no se liberó anteriormente
@@ -560,20 +566,23 @@ int arr3d[filas][columnas][profundidad] = {
   {{9,10,11,12},{13,14,15,16}},
   {{17,18,19,20},{21,22,23,24}}
 };
-// Almacenamiento:
-/*
-arr3d[0][0][1] = 1;
-arr3d[0][0][2] = 2;
-arr3d[0][0][3] = 3;
-arr3d[0][0][4] = 4;
-arr3d[0][1][0] = 5;
-arr3d[0][1][1] = 6;
-arr3d[0][1][2] = 7;
-arr3d[0][1][3] = 8;
-....
-arr3d[2][1][3] = 24;
-*/
 ```
+
+<details>
+<summary> Output </summary>
+<code>
+arr3d[0][0][1] = 1;<br>
+arr3d[0][0][2] = 2;<br>
+arr3d[0][0][3] = 3;<br>
+arr3d[0][0][4] = 4;<br>
+arr3d[0][1][0] = 5;<br>
+arr3d[0][1][1] = 6;<br>
+arr3d[0][1][2] = 7;<br>
+arr3d[0][1][3] = 8;<br>
+....<br>
+arr3d[2][1][3] = 24;<br>
+</code>
+</details>
 
 ## Notación de punteros y arrays
 
@@ -593,6 +602,18 @@ for (int i = 0; i < 5; i++){
 }
 std::cout << "\n";
 ```
+
+<details>
+<summary> Output </summary>
+<pre>
+<code>
+Notacion de array
+12345
+Notacion de punteros
+12345
+</code>
+</pre>
+</details>
 
 > Nota: tener cuidado con la notación de los punteros porque nos podemos ir más
 > alla de los límites del array y estaríamos recogiendo la basura del sistema.
@@ -617,7 +638,7 @@ Para poder crear un array, se utilizará la función `new`.
 int *vector = new int[5];
 ```
 
-<img src="Img/punteros/imagen3.png">
+![](Img/pointer3.png)
 
 > No olvidar liberar la memoría asignada cuando ya no se necesite.
 
@@ -682,19 +703,23 @@ for (int i = 0; i <filas; i++){
     std::cout << "Matrix[" << i << "][" << j << "] Address: " << (*(matrix + i) + j) << " Value: " <<  *(*(matrix + i) + j) << std::endl;
   }
 }
-/*
-matrix[0][0] Address: 007B7F10 Value: 1
-matrix[0][1] Address: 007B7F14 Value: 2
-matrix[0][2] Address: 007B7F18 Value: 3
-matrix[0][3] Address: 007B7F1C Value: 4
-matrix[0][4] Address: 007B7F20 Value: 5
-matrix[1][0] Address: 007B7F30 Value: 6
-matrix[1][1] Address: 007B7F34 Value: 7
-matrix[1][2] Address: 007B7F38 Value: 8
-matrix[1][3] Address: 007B7F3C Value: 9
-matrix[1][4] Address: 007B7F40 Value: 10
-*/
 ```
+<details>
+<summary> Output </summary>
+<code>
+matrix[0][0] Address: 007B7F10 Value: 1<br>
+matrix[0][1] Address: 007B7F14 Value: 2<br>
+matrix[0][2] Address: 007B7F18 Value: 3<br>
+matrix[0][3] Address: 007B7F1C Value: 4<br>
+matrix[0][4] Address: 007B7F20 Value: 5<br>
+matrix[1][0] Address: 007B7F30 Value: 6<br>
+matrix[1][1] Address: 007B7F34 Value: 7<br>
+matrix[1][2] Address: 007B7F38 Value: 8<br>
+matrix[1][3] Address: 007B7F3C Value: 9<br>
+matrix[1][4] Address: 007B7F40 Value: 10
+</code>
+</details>
+<br>
 Esto es similar, si hicieramos lo siguiente con los array:
 
 ```CPP
@@ -711,7 +736,7 @@ for (int i = 0; i <2; i++){
 }
 ```
 
-<img src="Img/punteros/imagen4.png">
+![](Img/pointer4.png)
 
 > La ventaja, es que podemos modificar el array de punteros, de acuerdo a lo solicitado
 > por un usuario, en cambio con array vamos a tener algo predefinido, que no se puede
@@ -744,59 +769,66 @@ for (int i = 0; i < fil; i++) {
         }
     }
 }
-/*
-matrix[0][0][0] Address: 007B7AE8 Value: 1
-matrix[0][0][1] Address: 007B7AEC Value: 2
-matrix[0][1][0] Address: 007B7AF8 Value: 3
-matrix[0][1][1] Address: 007B7AFC Value: 4
-matrix[0][2][0] Address: 007B7B08 Value: 5
-matrix[0][2][1] Address: 007B7B0C Value: 6
-matrix[0][3][0] Address: 007B7B18 Value: 7
-matrix[0][3][1] Address: 007B7B1C Value: 8
-matrix[0][4][0] Address: 007B7B28 Value: 9
-matrix[0][4][1] Address: 007B7B2C Value: 10
-matrix[1][0][0] Address: 007B7B58 Value: 11
-matrix[1][0][1] Address: 007B7B5C Value: 12
-matrix[1][1][0] Address: 007B7B68 Value: 13
-matrix[1][1][1] Address: 007B7B6C Value: 14
-matrix[1][2][0] Address: 007B7B78 Value: 15
-matrix[1][2][1] Address: 007B7B7C Value: 16
-matrix[1][3][0] Address: 007B7B88 Value: 17
-matrix[1][3][1] Address: 007B7B8C Value: 18
-matrix[1][4][0] Address: 007B7B98 Value: 19
-matrix[1][4][1] Address: 007B7B9C Value: 20
-matrix[2][0][0] Address: 007B7BC8 Value: 21
-matrix[2][0][1] Address: 007B7BCC Value: 22
-matrix[2][1][0] Address: 007B7BD8 Value: 23
-matrix[2][1][1] Address: 007B7BDC Value: 24
-matrix[2][2][0] Address: 007B7BE8 Value: 25
-matrix[2][2][1] Address: 007B7BEC Value: 26
-matrix[2][3][0] Address: 007B7BF8 Value: 27
-matrix[2][3][1] Address: 007B7BFC Value: 28
-matrix[2][4][0] Address: 007B7C08 Value: 29
-matrix[2][4][1] Address: 007B7C0C Value: 30
-matrix[3][0][0] Address: 007B7C38 Value: 31
-matrix[3][0][1] Address: 007B7C3C Value: 32
-matrix[3][1][0] Address: 007BBF20 Value: 33
-matrix[3][1][1] Address: 007BBF24 Value: 34
-matrix[3][2][0] Address: 007B7E10 Value: 35
-matrix[3][2][1] Address: 007B7E14 Value: 36
-matrix[3][3][0] Address: 007B7D60 Value: 37
-matrix[3][3][1] Address: 007B7D64 Value: 38
-matrix[3][4][0] Address: 007B7D40 Value: 39
-matrix[3][4][1] Address: 007B7D44 Value: 40
-matrix[4][0][0] Address: 007B7DC0 Value: 41
-matrix[4][0][1] Address: 007B7DC4 Value: 42
-matrix[4][1][0] Address: 007B7E40 Value: 43
-matrix[4][1][1] Address: 007B7E44 Value: 44
-matrix[4][2][0] Address: 007B7CF0 Value: 45
-matrix[4][2][1] Address: 007B7CF4 Value: 46
-matrix[4][3][0] Address: 007B7DD0 Value: 47
-matrix[4][3][1] Address: 007B7DD4 Value: 48
-matrix[4][4][0] Address: 007B7D20 Value: 49
-matrix[4][4][1] Address: 007B7D24 Value: 50
-*/
 ```
+
+<details>
+<summary> Output </summary>
+<code>
+matrix[0][0][0] Address: 007B7AE8 Value: 1<br>
+matrix[0][0][1] Address: 007B7AEC Value: 2<br>
+matrix[0][1][0] Address: 007B7AF8 Value: 3<br>
+matrix[0][1][1] Address: 007B7AFC Value: 4<br>
+matrix[0][2][0] Address: 007B7B08 Value: 5<br>
+matrix[0][2][1] Address: 007B7B0C Value: 6<br>
+matrix[0][3][0] Address: 007B7B18 Value: 7<br>
+matrix[0][3][1] Address: 007B7B1C Value: 8<br>
+matrix[0][4][0] Address: 007B7B28 Value: 9<br>
+matrix[0][4][1] Address: 007B7B2C Value: 10<br>
+matrix[1][0][0] Address: 007B7B58 Value: 11<br>
+matrix[1][0][1] Address: 007B7B5C Value: 12<br>
+matrix[1][1][0] Address: 007B7B68 Value: 13<br>
+matrix[1][1][1] Address: 007B7B6C Value: 14<br>
+matrix[1][2][0] Address: 007B7B78 Value: 15<br>
+matrix[1][2][1] Address: 007B7B7C Value: 16<br>
+matrix[1][3][0] Address: 007B7B88 Value: 17<br>
+matrix[1][3][1] Address: 007B7B8C Value: 18<br>
+matrix[1][4][0] Address: 007B7B98 Value: 19<br>
+matrix[1][4][1] Address: 007B7B9C Value: 20<br>
+matrix[2][0][0] Address: 007B7BC8 Value: 21<br>
+matrix[2][0][1] Address: 007B7BCC Value: 22<br>
+matrix[2][1][0] Address: 007B7BD8 Value: 23<br>
+matrix[2][1][1] Address: 007B7BDC Value: 24<br>
+matrix[2][2][0] Address: 007B7BE8 Value: 25<br>
+matrix[2][2][1] Address: 007B7BEC Value: 26<br>
+matrix[2][3][0] Address: 007B7BF8 Value: 27<br>
+matrix[2][3][1] Address: 007B7BFC Value: 28<br>
+matrix[2][4][0] Address: 007B7C08 Value: 29<br>
+matrix[2][4][1] Address: 007B7C0C Value: 30<br>
+matrix[3][0][0] Address: 007B7C38 Value: 31<br>
+matrix[3][0][1] Address: 007B7C3C Value: 32<br>
+matrix[3][1][0] Address: 007BBF20 Value: 33<br>
+matrix[3][1][1] Address: 007BBF24 Value: 34<br>
+matrix[3][2][0] Address: 007B7E10 Value: 35<br>
+matrix[3][2][1] Address: 007B7E14 Value: 36<br>
+matrix[3][3][0] Address: 007B7D60 Value: 37<br>
+matrix[3][3][1] Address: 007B7D64 Value: 38<br>
+matrix[3][4][0] Address: 007B7D40 Value: 39<br>
+matrix[3][4][1] Address: 007B7D44 Value: 40<br>
+matrix[4][0][0] Address: 007B7DC0 Value: 41<br>
+matrix[4][0][1] Address: 007B7DC4 Value: 42<br>
+matrix[4][1][0] Address: 007B7E40 Value: 43<br>
+matrix[4][1][1] Address: 007B7E44 Value: 44<br>
+matrix[4][2][0] Address: 007B7CF0 Value: 45<br>
+matrix[4][2][1] Address: 007B7CF4 Value: 46<br>
+matrix[4][3][0] Address: 007B7DD0 Value: 47<br>
+matrix[4][3][1] Address: 007B7DD4 Value: 48<br>
+matrix[4][4][0] Address: 007B7D20 Value: 49<br>
+matrix[4][4][1] Address: 007B7D24 Value: 50<br>
+</code>
+</details>
+<br>
+
+
 Un problema con este tipo de asignación, es que la memoria no es continua,
 en el sentido que la dirección de memoria usada por fila del array de punteros,
 apunta a una sección distinta de la memoria del sistema. Pero se puede solucionar
@@ -825,26 +857,31 @@ for (int i = 0; i < filas; i++) {
         std::cout << "maxContinue[" << i << "][" << j << "] Address: " << (*(matrix + i) + j) << " Value: " << *(*(matrix + i) + j) << std::endl;
     }
 }
-/* output
-maxContinue[0][0] Address: 00F6BF30 Value: 1
-maxContinue[0][1] Address: 00F6BF34 Value: 2
-maxContinue[0][2] Address: 00F6BF38 Value: 3
-maxContinue[0][3] Address: 00F6BF3C Value: 4
-maxContinue[0][4] Address: 00F6BF40 Value: 5
-maxContinue[1][0] Address: 00F6BF44 Value: 6
-maxContinue[1][1] Address: 00F6BF48 Value: 7
-maxContinue[1][2] Address: 00F6BF4C Value: 8
-maxContinue[1][3] Address: 00F6BF50 Value: 9
-maxContinue[1][4] Address: 00F6BF54 Value: 10
-*/
 ```
+<details>
+<summary> Output </summary>
+<code>
+maxContinue[0][0] Address: 00F6BF30 Value: 1<br>
+maxContinue[0][1] Address: 00F6BF34 Value: 2<br>
+maxContinue[0][2] Address: 00F6BF38 Value: 3<br>
+maxContinue[0][3] Address: 00F6BF3C Value: 4<br>
+maxContinue[0][4] Address: 00F6BF40 Value: 5<br>
+maxContinue[1][0] Address: 00F6BF44 Value: 6<br>
+maxContinue[1][1] Address: 00F6BF48 Value: 7<br>
+maxContinue[1][2] Address: 00F6BF4C Value: 8<br>
+maxContinue[1][3] Address: 00F6BF50 Value: 9<br>
+maxContinue[1][4] Address: 00F6BF54 Value: 10<br>
+</code>
+</details>
+<br>
+
 
 # Pointers and Strings
 
 > [!IMPORTANT]
 > Desde la versión de `C++98` se agregó el tipo de variable `string`, con el cual
-> facilita el estar manejando string con punteros; pero por fines académicos se utilizarán
-> los punteros. Para más adelante en el curso si se permitirá su uso.
+> facilita el estar manejando string con punteros; pero por fines académicos
+> estos no se podrán utilizar en el tema de punteros.
 <!-- VERIFICAR A PARTIR DE QUE TEMA SE PERMITE LA REALIZACION DE ESTE TEMA-->
 
 Los `strings` van a ser utilizados habitualmente para realizar operaciones con
@@ -916,6 +953,14 @@ int main() {
 }
 ```
 
+<details>
+<summary> Output</summary>
+<code>
+Longitud1: 15<br>
+Longitud2: 10<br>
+</code>
+</details>
+<br>
 Por lo tanto, en caso el string no contenga el operador nulo, este nos va generar
 un error.
 
@@ -934,7 +979,6 @@ Así mismo,La función nos va a devolver 3 posibles valores:
 - **< 0**: El valor de *lhs* aparece antes que *rhs* en orden lexicográfico.
 - **= 0**: Son dos cadenas iguales.
 - **> 0**: El valor de *lhs* aparece después que *rhs* en orden lexicográfico.
-
 
 Ejemplo:
 
@@ -984,14 +1028,14 @@ int main() {
     char destino[16];
     char *copia;
     copia = strcpy(destino,fuente);
-    std::cout << "Fuente: " << fuente << std::endl;
-    std::cout << "Destino: " << destino << std::endl;
-    std::cout << "Copia: " << copia << std::endl;
+    std::cout << "Fuente: " << fuente << std::endl;//Programacion 02
+    std::cout << "Destino: " << destino << std::endl; // Programacion 02
+    std::cout << "Copia: " << copia << std::endl; // Programacion 02
     return 0;
 }
 ```
 
-![](Img/puntero1.png)
+![](Img/pointer5.png)
 
 
 ```CPP
@@ -1016,9 +1060,9 @@ int main() {
   char *copia;
   copia = strncpy(destino, fuente,10);
   destino[10] = '\0';
-  std::cout << "Fuente: " << fuente << std::endl;
-  std::cout << "Destino: " << destino << std::endl;
-  std::cout << "Copia: " << copia << std::endl;s
+  std::cout << "Fuente: " << fuente << std::endl; // Programacion02
+  std::cout << "Destino: " << destino << std::endl;// Programaci
+  std::cout << "Copia: " << copia << std::endl; // Programaci
   return 0;
 }
 ```
@@ -1044,7 +1088,7 @@ int main() {
   char nombre[20] = "Jesus";
   char apellido[] = "Huayhua";
   strcat(nombre, apellido);
-  std::cout << nombre << std::endl;
+  std::cout << nombre << std::endl; // JesusHuayhua
   return 0;
 }
 ```
@@ -1084,7 +1128,7 @@ void dividirCadena(const char *cadena, char *nombre, char *apellido) {
     // Verificar si se encontró el guion bajo
     if (posGuionBajo != NULL) {
         // Calcular la longitud del nombre
-        size_t longitudNombre = posGuionBajo - cadena;
+        size_t longitudNombre = posGuionBajo - cadena;// se puede cambiar el size_t por un int
         // Copiar el nombre
         strncpy(nombre, cadena, longitudNombre);
         nombre[longitudNombre] = '\0';
@@ -1098,7 +1142,7 @@ void dividirCadena(const char *cadena, char *nombre, char *apellido) {
 }
 
 int main() {
-    char cadena[] = "nombre_apellido";
+    char cadena[] = "Jesus_Huayhua";
     char *nombre = new char[50];
     char *apellido = new char[50];
     // Llamar a la función para dividir la cadena
@@ -1110,6 +1154,16 @@ int main() {
 }
 ```
 
+<details>
+<summary> Output </summary>
+<code>
+Nombre: Jesus<br>
+Apellido: Huayhua
+</code>
+</details>
+<br>
+
+
 Así como tenemos una función para encontrar la primera ocurrencia de un caracter
 en un sring, también podemos buscar la última ocurrencia del carácter en el string.
 
@@ -1119,8 +1173,6 @@ const char* strrchr( const char* str, int ch );
 ```
 
 ### Convertir string a formato numerico
-
-
 
 ```CPP
 double atof(const char* str);
@@ -1140,9 +1192,18 @@ int main() {
 }
 ```
 
+<details>
+<summary> Output </summary>
+<code>
+-10.5<br>
+2.3e-15<br>
+5.5e+10
+</code>
+</details>
+<br>
 
 ```CPP
-int       atoi( const char* str );
+int atoi( const char* str );
 ```
 
 Convertir un *string* el cual representa un número entero(int).
@@ -1153,13 +1214,21 @@ Convertir un *string* el cual representa un número entero(int).
 
 int main() {
   std::cout << std::atoi("31337 with words") << '\n'
-            << std::atoi("10000000000") << '\n'
+            << std::atoi("100000000") << '\n'
             << std::atoi("palabra tiene 7 caracteres") << '\n';
   return 0;
 }
 ```
 
-
+<details>
+<summary> Output </summary>
+<code>
+31337<br>
+10000000<br>
+0
+</code>
+</details>
+<br>
 
 # Pointers and Structures
 
@@ -1233,59 +1302,191 @@ for (int i = 0; i < ptrMatrixStruct->filas; i++) {
 }
 ```
 
-```bash
-# Output
-StructMatrix[0][0] Address: 01127EF0 Value: 1
-StructMatrix[0][1] Address: 01127EF4 Value: 2
-StructMatrix[0][2] Address: 01127EF8 Value: 3
-StructMatrix[0][3] Address: 01127EFC Value: 4
-StructMatrix[0][4] Address: 01127F00 Value: 5
-StructMatrix[1][0] Address: 01127F10 Value: 6
-StructMatrix[1][1] Address: 01127F14 Value: 7
-StructMatrix[1][2] Address: 01127F18 Value: 8
-StructMatrix[1][3] Address: 01127F1C Value: 9
-StructMatrix[1][4] Address: 01127F20 Value: 10
-StructMatrix[2][0] Address: 01127A98 Value: 11
-StructMatrix[2][1] Address: 01127A9C Value: 12
-StructMatrix[2][2] Address: 01127AA0 Value: 13
-StructMatrix[2][3] Address: 01127AA4 Value: 14
-StructMatrix[2][4] Address: 01127AA8 Value: 15
-StructMatrix[3][0] Address: 01127AB8 Value: 16
-StructMatrix[3][1] Address: 01127ABC Value: 17
-StructMatrix[3][2] Address: 01127AC0 Value: 18
-StructMatrix[3][3] Address: 01127AC4 Value: 19
-StructMatrix[3][4] Address: 01127AC8 Value: 20
-StructMatrix[4][0] Address: 01127AD8 Value: 21
-StructMatrix[4][1] Address: 01127ADC Value: 22
-StructMatrix[4][2] Address: 01127AE0 Value: 23
-StructMatrix[4][3] Address: 01127AE4 Value: 24
-StructMatrix[4][4] Address: 01127AE8 Value: 25
-```
+
+<details>
+<summary> Output </summary>
+<code>
+StructMatrix[0][0] Address: 0x606b9f53e300 Value: 1<br>
+StructMatrix[0][1] Address: 0x606b9f53e304 Value: 2<br>
+StructMatrix[0][2] Address: 0x606b9f53e308 Value: 3<br>
+StructMatrix[0][3] Address: 0x606b9f53e30c Value: 4<br>
+StructMatrix[0][4] Address: 0x606b9f53e310 Value: 5<br>
+StructMatrix[1][0] Address: 0x606b9f53e320 Value: 6<br>
+StructMatrix[1][1] Address: 0x606b9f53e324 Value: 7<br>
+StructMatrix[1][2] Address: 0x606b9f53e328 Value: 8<br>
+StructMatrix[1][3] Address: 0x606b9f53e32c Value: 9<br>
+StructMatrix[1][4] Address: 0x606b9f53e330 Value: 10<br>
+StructMatrix[2][0] Address: 0x606b9f53e340 Value: 11<br>
+StructMatrix[2][1] Address: 0x606b9f53e344 Value: 12<br>
+StructMatrix[2][2] Address: 0x606b9f53e348 Value: 13<br>
+StructMatrix[2][3] Address: 0x606b9f53e34c Value: 14<br>
+StructMatrix[2][4] Address: 0x606b9f53e350 Value: 15<br>
+StructMatrix[3][0] Address: 0x606b9f53e360 Value: 16<br>
+StructMatrix[3][1] Address: 0x606b9f53e364 Value: 17<br>
+StructMatrix[3][2] Address: 0x606b9f53e368 Value: 18<br>
+StructMatrix[3][3] Address: 0x606b9f53e36c Value: 19<br>
+StructMatrix[3][4] Address: 0x606b9f53e370 Value: 20<br>
+StructMatrix[4][0] Address: 0x606b9f53e380 Value: 21<br>
+StructMatrix[4][1] Address: 0x606b9f53e384 Value: 22<br>
+StructMatrix[4][2] Address: 0x606b9f53e388 Value: 23<br>
+StructMatrix[4][3] Address: 0x606b9f53e38c Value: 24<br>
+StructMatrix[4][4] Address: 0x606b9f53e390 Value: 25
+</code>
+</details>
+<br>
 
 # Puntero `void`
 
-<h1> AGREGAR INFORMACION</h1>
+Los punteros `void`, a diferencia de los distintos tipos de punteros estos no están
+asociados a ningún tipo de dato específico. Por lo tanto:
 
-Sabemos que no existe los tipos de datos [`void`](../1Variables/variables.md/#void),
-pero si los punteros de este tipo, donde a diferencia de los otros tipos de punteros,
-que solo pueden se referenciados a otras variables del mismo tipo; el puntero `void`,
-puede hacer referencia a cualquier tipo de variable.
+- Estos pueden apuntar a cualquier tipo de dato, ya que no tiene ningún tipo de datos específico.
+- Al solo almacenar la dirección de memoría de una variable, el compilado desconce a que tipo de dato está apuntando, por lo que va a ser necesario realizar un casteo para poder concer el valor de dicha dirección de memoría.
 
-Como un puntero void, puede apuntar a cualquier tipo de dato, no se le podría aplicar
-la aritmética de puntero directamente, ya que el compilador no sabe a que tipo
-de dato esta haciendo referencia dicho puntero.
+## Casteo de una variable
 
-Para poder hacer la referencia al dato que apunta este tipo de puntero, tenemos
-que hacer un casteo.
+Para poder castear una variable vamos a tener 5 formas:
+
+- Casting tradicional
+- static_cast
+- dynamic_cast
+- const_cast
+- reinterpret_cast
+
+### Casting tradicional
+
+El casting tradicional que heredo C++ del lenguaje de programación C.
+
+Este método es menos seguro, ya que en tiempo de compilación no se realiza ninguna
+comprobación; por lo tanto, es más propenso a errores en caso lo usemos incorrectamente.
 
 ```CPP
-int a = 5;
-void *ptrVoid;
-int array[5] = {1,2,3,4,5};
-ptrVoid = array;
+int num = 20;
+void* myVoidPointer = &num;
+std:: cout << *(int*)myVoidPointer << std:: endl; // 20
+```
+ 
+ ### static_cast
 
-ptrVoid = (int *)ptrVoid + 1; // Los compiladores no permite ptr++
-ptrVoid = (int *)ptrVoid + 3; // Los compiladores no permite ptr += 3
+Recomendable para realizar conversiones seguras en tiempo de compilación entre los tipos
+relacionados.
 
-std::cout << *(int *)ptrVoid;
+```CPP
+double num = 10.4;
+void *ptr_void = &num;
+// void *ptr_void = static_cast<void *>(&num); // tambien es posible usarlo, pero aqui no es recomendable
+std::cout << *static_cast<double *>(ptr_void) << std::endl; // 10.4
+```
+
+### dynamic_cast
+
+Utilizado para realizar conversiones en tiempo de ejecución principalmente cuando se trabaja con clase polimórficas
+y herencia. Tener en cuenta que solo se puede realizar con punteros a clases polimórficas.
+
+> [!IMPORTANT]
+> Se mostrará un ejemplo más completo cuando se llegue al tema de POO.
+
+```CPP
+#include <iostream>
+
+class Base {
+public:
+    virtual void print() const {
+        std::cout << "Base class" << std::endl;
+    }
+};
+
+class Derived : public Base {
+public:
+    void print() const override {
+        std::cout << "Derived class" << std::endl;
+    }
+};
+
+int main() {
+    Base baseObj;
+    Derived derivedObj;
+
+    void* voidPtr = &baseObj;
+
+    // Intentamos convertir el puntero void a un puntero de tipo Base usando dynamic_cast
+    Base* basePtr = dynamic_cast<Base*>(static_cast<Base*>(voidPtr));
+
+    if (basePtr) {
+        basePtr->print();
+    } else {
+        std::cout << "La conversión dynamic_cast no fue exitosa." << std::endl;
+    }
+
+    voidPtr = &derivedObj;
+
+    // Intentamos convertir el puntero void a un puntero de tipo Derived usando dynamic_cast
+    Derived* derivedPtr = dynamic_cast<Derived*>(static_cast<Base*>(voidPtr));
+
+    if (derivedPtr) {
+        derivedPtr->print();
+    } else {
+        std::cout << "La conversión dynamic_cast no fue exitosa." << std::endl;
+    }
+
+    return 0;
+}
+```
+
+### const_cast
+
+Con este tipo de casteo, vamos a poder agregar o quitar el calificador
+`const` o `volatile`. Por lo que, se puede usar para modificar datos que originalmente
+no se podían.
+
+```CPP
+#include <iostream>
+
+int main() {
+    int intValue = 42;
+    const void* constVoidPtr = &intValue;
+
+    // Intentamos convertir el puntero void const a un puntero de tipo int const usando const_cast
+    const int* intPtr = const_cast<const int*>(static_cast<const int*>(constVoidPtr));
+
+    if (intPtr) {
+        std::cout << "Valor a través de intPtr: " << *intPtr << std::endl;
+
+        // Modificamos el valor a través del puntero
+        // Esto está permitido porque el puntero se convirtió de const void* a const int*
+        // y const_cast se usó para eliminar la const-cualificación.
+        *const_cast<int*>(intPtr) = 84;
+
+        std::cout << "Nuevo valor a través de intPtr: " << *intPtr << std::endl;
+    } else {
+        std::cout << "La conversión const_cast no fue exitosa." << std::endl;
+    }
+
+    return 0;
+}
+```
+### reinterpret_cast
+
+Realiza conversiones de punteros a otros tipos sin tener en cuenta su relación.
+Por lo tanto, tiene que ser usado con precaución, ya que se puede conducir a compartamientos
+indefinidos.
+
+```CPP
+#include <iostream>
+
+int main() {
+    // Crear un puntero void*
+    void* voidPointer = nullptr;
+
+    // Convertir el puntero void* a un puntero int*
+    int* intPointer = reinterpret_cast<int*>(voidPointer);
+
+    // Hacer algo con el puntero int* (en este caso, solo imprimir la dirección)
+    if (intPointer != nullptr) {
+        std::cout << "Dirección del puntero int*: " << intPointer << std::endl;
+    } else {
+        std::cout << "El puntero void* no puede convertirse a int*." << std::endl;
+    }
+    return 0;
+}
 ```
