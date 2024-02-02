@@ -33,7 +33,8 @@ Así mismo, una introducción al lenguaje de programación JAVA.
 
 Durante las clases y evaluaciones, por decisión de los profesores se estará utilizando el IDE [ Apache NetBeans](https://netbeans.apache.org)
 
-Así que se aconseja que para mejorar la velocidad de uno mientras programa, practicar [typing ⌨️](https://www.typingclub.com/) y buscar los atajos 
+Así que se aconseja que para mejorar la velocidad de uno mientras programa,
+practicar [typing ⌨️](https://www.typingclub.com/) y buscar los atajos
 de teclado proporcionados por el mismo IDE.
 
 ## Organización del Repositorio
