@@ -16,3 +16,9 @@ Enunciados/
 sync.ffs_db
 # Zips
 *.zip
+#Archivos de CLion para cuando se trabaja en Linux
+.idea/
+cmake-build-debug/
+CMakeLists.txt
+# Temporalemente
+EstructurasDeDatos/
