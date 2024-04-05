@@ -1,5 +1,6 @@
-<h1> Punteros </h1>
+# Punteros
 
+- [Punteros](#punteros)
 - [Introducción](#introducción)
 - [Punteros y Memoria](#punteros-y-memoria)
   - [Ventajas](#ventajas)
