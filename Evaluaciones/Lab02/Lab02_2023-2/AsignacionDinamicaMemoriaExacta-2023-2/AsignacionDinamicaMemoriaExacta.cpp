@@ -1,5 +1,16 @@
 #include "AsignacionDinamicaMemoriaExacta.h"
-
+/*
+ * Consideraciones del codigo:
+ * Se vera que al momento de hacer 'new', ocurre una separacion entre las '{}', de la siguietne manera:
+ * int arr = new int[cnt]{
+ * };
+ * Esto ocurre porque se realiza el comando: ALT + SHIFT + F, el cual formatea nuestro código, para que sea más ligeble
+ * en ciertos aspectos, aunque aquí falla.
+ *
+ * Otra forma cosa a tener en considración, es que no es necesario inicializar todas las variables con new,
+ * se puede hacer de forma estática, ya que se esta guardando de forma temporal. Esto principalmente para cuando se trabaja
+ * con punteros simples (type *).
+ * */
 using namespace std;
 
 void abrirArchivoLectura(ifstream &file, const char *name) {
@@ -122,20 +133,33 @@ void pruebaDeLecturaDeProductos(const char *name, char ***productos, int *stock,
     file.close();
 }
 
-//codigo, dni,cnt, fecha
+
+//codigo, dni,cantidadSolicitada, fecha
 //JXD-139,50375303,6,24/08/2023
 //CRU-009,50375303,5,3/09/2023
-
 void lecturaDePedidos(const char *name, int*& fechaPedidos, char ***&codigoPedidos, int ***& dniCantPedidos) {
     ifstream file;
     abrirArchivoLectura(file, name);
-    int i = 0, cntPedido = 0; // i = cantidad de pedido totales
-    inicializarPedidos(MAX_PEDIDOS, fechaPedidos, codigoPedidos, dniCantPedidos);
+    inicializarPedidos(MAX_FECHA, MAX_PEDIDOS,fechaPedidos, codigoPedidos, dniCantPedidos);
+    char codigo[8],c;
+    int dni, fechacntPedido = 0,dd,mm,aaaa;
     while (true) {
-        leerString(file,);
-
+        file.getline(codigo,8,',');
+        if(file.eof()) break;
+        file >> dni >> c >> cntPedido >> c >> dd >> c >> mm >> c >> aaaa  >> c;
+        fecha = aaaa * 1000 + mm * 100 + dd;//obtenemos la fecha
+        if (existeFecha(fechaPedidos,fecha)){ // si la fecha existe, agregamos solo el nuevo pedido
+            int indice = indiceFecha(fechaPedidos,fecha); // obtenemos el indice de la fecha
+            agregarPedido(codigoPedidos[indice],codigo);//agregamos el pedido;
+            agregarDniCantPedido(dniCantPedidos[indice],dni,cntPedido); // agregamos el dni y la cantidad
+        } else{ // si la fecha no existe, agregamos la fecha y el pedido
+            int indice = 0;
+            while(fechaPedidos[indice] != 0) indice++;
+            fechaPedidos[indice] = fecha; // agregamos la fecha
+            agregarPedido(codigoPedidos[indice],codigo);//agregamos el pedido;
+            agregarDniCantPedido(dniCantPedidos[indice],dni,cntPedido); // agregamos el dni y la cantidad
+        }
     }
-
 }
 
 void inicializarPedidos(int cnt, int cnt2, int*& fechaPedidos, char ***&codigoPedidos, int ***& dniCantPedidos) {
@@ -154,10 +178,25 @@ void inicializarPedidos(int cnt, int cnt2, int*& fechaPedidos, char ***&codigoPe
     }
 }
 
+bool existeFecha(int *&fechaPedidos,const int fecha){
+    for (int i = 0; fechaPedidos[i] != 0; ++i) {
+        if(fechaPedidos[i] == fecha) return true;
+    }
+    return false; // no se encontro la fecha
+}
 
+int indiceFecha(int *&fechaPedidos,const int fecha){
+    int i = 0;
+    while(fechaPedidos[i] != fecha) i++;
+    return i;
+}
 
+void agregarPedido(char **&codigoPedidos,const char *codigo){
 
+}
+void agregarDniCantPedido(int **&dniCantPedidos,const int dni,const int cntPedido){
 
+}
 
 
 
