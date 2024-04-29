@@ -21,4 +21,6 @@ sync.ffs_db
 cmake-build-debug/
 CMakeLists.txt
 # Temporalemente
-EstructurasDeDatos/
+#EstructurasDeDatos/
+CodigosDePrueba/
+
