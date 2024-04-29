@@ -46,9 +46,7 @@
   - [Casteo de una variable](#casteo-de-una-variable)
     - [Casting tradicional](#casting-tradicional)
     - [static\_cast](#static_cast)
-    - [dynamic\_cast](#dynamic_cast)
-    - [const\_cast](#const_cast)
-    - [reinterpret\_cast](#reinterpret_cast)
+- [Punteros a funcion](#punteros-a-funcion)
 
 # Introducción 
 
@@ -1350,9 +1348,9 @@ Para poder castear una variable vamos a tener 5 formas:
 
 - Casting tradicional
 - static_cast
-- dynamic_cast
+<!-- - dynamic_cast
 - const_cast
-- reinterpret_cast
+- reinterpret_cast -->
 
 ### Casting tradicional
 
@@ -1378,7 +1376,7 @@ void *ptr_void = &num;
 // void *ptr_void = static_cast<void *>(&num); // tambien es posible usarlo, pero aqui no es recomendable
 std::cout << *static_cast<double *>(ptr_void) << std::endl; // 10.4
 ```
-
+<!-- 
 ### dynamic_cast
 
 Utilizado para realizar conversiones en tiempo de ejecución principalmente cuando se trabaja con clase polimórficas
@@ -1490,4 +1488,9 @@ int main() {
     }
     return 0;
 }
-```
+``` -->
+
+# Punteros a funcion
+
+Inicio del resumen de puntero a funcion.
+

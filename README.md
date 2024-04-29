@@ -10,16 +10,16 @@ Así mismo, una introducción al lenguaje de programación JAVA.
 
 ## Programa Analítico
 
-| Temas a tratar                                  |                         Teoría                          |                            Código                            |
-| ----------------------------------------------- | :-----------------------------------------------------: | :----------------------------------------------------------: |
-| Operadores Sobrecargados                        |     [resumen](Resumen/01operadoresSobrecargados.md)     |     [codigo](Codigos/01OperadoresSobrecargados/main.cpp)     |
-| Funciones y Alcance de las variables            | [resumen](Resumen/02funcionesYAlcanceDeLasVariables.md) | [codigo](Codigos/02funcionesYAlcanceDeLasVariables/main.cpp) |
-| Arreglos y Punteros                             |        [resumen](Resumen/03ArreglosYPunteros.md)        |                                                              |
-| Programación Orientada a Objetos                |                                                         |                                                              |
-| Herencia                                        |                                                         |                                                              |
-| Punteros a Objetos                              |                                                         |                                                              |
-| Plantillas y Bibliotecas Estándar de Plantillas |                                                         |                                                              |
-| Lenguaje de Programación JAVA                   |                                                         |                                                              |
+| Temas a tratar                                  |                         Teoría                          |
+| ----------------------------------------------- | :-----------------------------------------------------: |
+| Operadores Sobrecargados                        |     [resumen](Resumen/01operadoresSobrecargados.md)     |
+| Funciones y Alcance de las variables            | [resumen](Resumen/02funcionesYAlcanceDeLasVariables.md) |
+| Arreglos y Punteros                             |        [resumen](Resumen/03ArreglosYPunteros.md)        |
+| Programación Orientada a Objetos                |                                                         |
+| Herencia                                        |                                                         |
+| Punteros a Objetos                              |                                                         |
+| Plantillas y Bibliotecas Estándar de Plantillas |                                                         |
+| Lenguaje de Programación JAVA                   |                                                         |
 
 > [!IMPORTANT]
 > Desde el 2023-2, el curso recibio un cambio en los temas a tratar. Por lo tanto,
@@ -41,13 +41,14 @@ atajos de teclado proporcionados por el IDE, aquí dejo una pequeña lista de
 ## Organización del Repositorio
 
 - `Resumen:` son los resúmenes que eh realizado de las clases, y que también se encuentran en la wiki de este repositorio
-- `Codigos:` son los pequeños programas para ejemplificar lo aprendido en cada clase.
+<!-- - `Codigos:` son los pequeños programas para ejemplificar lo aprendido en cada clase. -->
 - `Evaluaciones:` se encuentras las evaluaciones de ciclos pasados.
+    - `Lab##/Lab##_ciclo:` En cada carpeta de laboratorio, se va a encontrar la resolución del laboratorio, así como los enuncionados del problema 
 
 
 ## ¿Porqué no uso el `using namespace std`?
 
-A lo largo de mis resúmenes y código de ejemplo que tengo, no voy a utilizar el clásico comando de `using namespace std`
+A lo largo de mis resúmenes, no voy a utilizar el clásico comando de `using namespace std`
 Esto principalmente, como una buena practica de programación, para esto voy a citar a Stroustrup's y mostrar un ejemplo de la vida real.
 
 Un caso practico donde esto no es para nada recomendable hacer uso de `using namespace std`, es si por ejemplo 

@@ -233,11 +233,11 @@ void funcion2_1(){
 Con esto ya tenemos un mejor orden de las cosas, sino también que se puede hacer
 llamado a cualquier función, siempre y cuando se declaró su cabecera antes.
 
-<details>
+<!-- <details>
     <summary> PREGUNTA: ¿La funcion1(), puede llamar a la funcion3()? </summary>
     No, porque su cabecera no fue definida antes y esta está solo antes de la <i>funcion2()</i>
     y <i>funcion2_1()</i>.
-</details>
+</details> -->
 
 ### Parametros de las funciones
 
