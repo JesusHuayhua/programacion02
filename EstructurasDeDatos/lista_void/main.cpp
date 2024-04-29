@@ -2,7 +2,6 @@
  * File:   main.cpp
  * Author: Jesus Huayhua Flores
  * Codigo: 20196201
- * Created on 28 de abril de 2024, 06:45 PM
  */
 
 #include "lista.hpp"

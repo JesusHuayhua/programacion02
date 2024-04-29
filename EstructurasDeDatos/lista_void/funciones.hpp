@@ -2,7 +2,6 @@
  * File:   funciones.hpp
  * Author: Jesus Huayhua Flores
  * Codigo: 20196201
- * Created on 29 de abril de 2024, 09:06 AM
  */
 
 #ifndef FUNCIONES_HPP
