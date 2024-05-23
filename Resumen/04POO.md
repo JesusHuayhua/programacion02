@@ -1,86 +1,95 @@
-- [Programación Orientada a Objetos(POO)](#programación-orientada-a-objetospoo)
-- [Clases](#clases)
-  - [Zona Publiic y Private](#zona-publiic-y-private)
+- [Programación Orientada a Objetos](#programación-orientada-a-objetos)
+  - [Objetos](#objetos)
+  - [Clases](#clases)
+  - [Zona public y private](#zona-public-y-private)
+  - [Constructores](#constructores)
+  - [Getter y Setter](#getter-y-setter)
 
-# Programación Orientada a Objetos(POO)
+# Programación Orientada a Objetos
 
-La idea fundamental de los lenguajes de programación orientados a objetos
-es combinar en una sola unidad tanto los datos como las funciones que operan
-con estos datos.
+## Objetos
 
-Donde la única forma de poder acceder a sus datos, es mediante las funciones
-de los objetos; también llamadas funciones miembro.
+Cuando abordamos un problema de programación orientada a objetos, ya no preguntas
+cómo se dividirá el problema en funciones, sino cómo se dividirá en objetos. Pensar
+en términos de objetos, más que de funciones, tiene un efecto sorporendete útil sobre 
+la facilidad con la que se pueden diseñar programas.
 
-# Clases
+## Clases
 
-Las clases van a ser como un plano, donde se especifica los datos, y funciones
-que se incluirán en los objetos de dicha clase. Algo similar a esto, es por ejemplo
-el tipo de dato `int`, este dato existe y podemos utilizarlo siempre que declaremos una variable;
-de igual forma con las `class`, este va a ser un tipo de dato que indicamos lo que puede y no
-realizar, mientras que los `objetos` son las variables que vamos a usar.
+En POO, decimos que los objetos son miembros de la clase.¿Qué quiere decir esto?.
+Veamos una analogía. Casi todos los lenguajes informáticos tiene tipos de datos
+integrados. Por ejemplo, el tipo `int`, con la cual podemos declarar tantas variables
+de tipo int como necesitemos en nuestro programa.
 
-![](Img/class01.png)
+De manera similar, podemos definir muchos objetos de la misma clase. La clase sirve
+como plan o modelo. Específica que datos y qué funciones se incluirán en los objetos
+de esa clase.
 
-```CPP
-//Declaracion de un clase, de preferencia en un archivo .hpp
+```C++
+// estructura principal de una clase
+class <nombre_de_la_clase> {
+public: // zona publica
 
-class nombreDeLaClase{
-private: // zona privada de la clase
-...
-public: // zona publica de la clase
-...
-}
-```
-## Zona Publiic y Private
+private: // zona privada
 
-Estas zonas son una de las características más importantes de la POO,
-en dichas zonas vamos a poder específicar que parte de una clase, queremos
-que se puedan acceder desde afuera de la clase.
-
-Sirve principalmente para mantener el encapsulamiento de una clase, y para
-evitar errores.
-
-```CPP
-// Persona.hpp
-class Persona {
-public:
-    Persona();
-    Persona(const Persona& orig);
-    virtual ~Persona();
-    // funciones
-    void getName(const char *name);
-    void printName(void);
-private:
-    char *nombre;
-    char *apellido;
-    int edad;
 };
-// Persona.cpps
-// Percatarce que las funciones llevan el nombre de la clase a la que pertenecen, seguido de `::`
-void Persona::getName(const char *name) {
-    nombre = new char [strlen(name) + 1];
-    strcpy(nombre, name);
-}
+```
 
-void Persona::printName(void) {
-    std::cout << "El nombre de la persona es: " << nombre << std::endl;
-}
-// main.cpp
-int main(int argc, char **argv) {
-    Persona person;
-    person.getName("Jesus Huayhua");
-    person.printName();
-    //std::cout << person.nombre << std::endl; // is private within this context
-    return 0;
+## Zona public y private
+
+Una clave de la programación orientada a objetos es la ocultación de datos.
+Esto significa, que los datos se ocultan dentro de la clase, para no ser accedidos
+erróneamente por funciones ajenas a la clase.
+
+El mecanismo más sencillo es colocar los atributos(variables) dentro de la zona
+privada, para que solamente se pueda acceder desde dentro de la clase.
+
+
+```C++
+class Persona{
+  private:
+  char *nombre;
+  char *apellido;
+  int edad;
+  int fecha_de_nacimiento;
+  public:
+  ...
+};
+```
+
+## Constructores
+
+Como veremos más adelantes, se va a tener funciones que permitan modificar el
+valor de los atributos o para mostrar su valor. Sin embargo, es conveniente
+que cuando se inicialicemos un objetos este cuente con ya ciertos valores por defecto.
+
+A esta función especial se le denomina `constructor` la cual se ejecuta automáticamente
+cuando se crea un objeto. En `C++` la función constructor va a tener el mismo
+nombre de nuestra clase.
+
+```C++
+// Persona.hpp
+class Persona{
+  private:
+  char *nombre;
+  char *apellido;
+  int edad;
+  int fecha_de_nacimiento;
+  public:
+  Persona();
+    
+  ...
+};
+// Persona.cpp
+/**
+ * se coloca <nombre-de-la-clase>::<nombre-de-la-funcion> para indicar
+ que la funcion pertenece a la clase.*/
+void Persona::Persona(){
+  nombre =nullptr;
+  apellido = nullptr;
+  edad = 0;
+  fecha_de_nacimiento = 0;
 }
 ```
 
-> [!TIP]
-> Se suele hacer que los datos de una clase sean privados, mientras
-> que las funciones que operadan dichos valores, sean publicas. Pero,
-> no existe alguna normal al respecto de esto.
-
-> [!NOTE]
-> En el ejemplo anterior, se ve como en la funcion main.cpp, se llama a
-> las funciones miembros de la clase, a esto ciertos lenguajes de programación
-> los llama *mensajes*.
+## Getter y Setter
