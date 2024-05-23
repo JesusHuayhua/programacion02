@@ -4,6 +4,7 @@
   - [Zona public y private](#zona-public-y-private)
   - [Constructores](#constructores)
   - [Getter y Setter](#getter-y-setter)
+    - [Getters](#getters)
 
 # Programación Orientada a Objetos
 
@@ -93,3 +94,14 @@ void Persona::Persona(){
 ```
 
 ## Getter y Setter
+
+Estos son métodos utilizados para acceder y modificar los atributos privados de una clase.
+Su uso es para mantener el principio de encapsulamiento.
+
+### Getters
+
+Se utiliza para obtener el valor de un atributo privado en una clase. Los getters permiten
+acceder a estos atributos desde afuera de una manera controlada.
+
+> [!IMPORTANT]
+> 
