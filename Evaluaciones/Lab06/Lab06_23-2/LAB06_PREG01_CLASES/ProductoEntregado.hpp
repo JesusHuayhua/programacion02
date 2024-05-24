@@ -19,7 +19,7 @@ public:
     void SetPrecio(double precio);
     double GetPrecio() const;
     void SetCodigo(char* codigo);
-    void ProductoEntregado::GetCodigo(char *codigo) const;
+    void GetCodigo(char *codigo) const;
 private:
     char *codigo;
     double precio;
