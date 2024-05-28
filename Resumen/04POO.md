@@ -3,8 +3,10 @@
   - [Clases](#clases)
   - [Zona public y private](#zona-public-y-private)
   - [Constructores](#constructores)
+  - [Puntero this](#puntero-this)
   - [Getter y Setter](#getter-y-setter)
     - [Getters](#getters)
+    - [Setter](#setter)
 
 # Programación Orientada a Objetos
 
@@ -92,6 +94,21 @@ void Persona::Persona(){
   fecha_de_nacimiento = 0;
 }
 ```
+## Puntero this
+
+El puntero `this`, es un puntero que se encuentra disponible en todos los métodos estáticos de una clase.
+Apuntando al objeto actual sobre el cual se está invocando el método.
+
+Esta característica, sirve principalmente para acceder y manipular los atributos del objeto que llamó al método.
+
+```CPP
+void Persona::Persona(){
+  this->nombre =nullptr;
+  this->apellido = nullptr;
+  this->edad = 0;
+  this->fecha_de_nacimiento = 0;
+}
+```
 
 ## Getter y Setter
 
@@ -104,4 +121,41 @@ Se utiliza para obtener el valor de un atributo privado en una clase. Los getter
 acceder a estos atributos desde afuera de una manera controlada.
 
 > [!IMPORTANT]
-> 
+> Si vamos a trabajar con punteros, estos no tienen que retornar el puntero; sino
+> una copia del valor al que esta apuntando, porque al retornar el puntero le estamos dando
+> la oportunidad de cambiar el valor directamente, rompiendo el encapsulamiento.
+
+```CPP
+// Esto no se tiene que hacer
+char *Persona::GetNombre(){
+  return this->nombre;
+}
+// Esto seria una forma de como acceder a lo solicitado y la recomendada para el curso
+void Persona::GetNombre(char *nombre){
+  if(this->nombre == nullptr) nombre[0] = 0;
+  else strcpy(nombre, this->nombre);s
+}
+int Persona::GetEdad(){
+  return this->edad;
+}
+```
+
+### Setter
+
+Un setter es un método que se utiliza para modificar el valor de un atributo privado de una clase.
+Los setters permiten cambiar el valor de estos atributos desde fuera de la clase, también de una manera controlada.
+
+```CPP
+void Persona::SetNombre(const char *nombre){
+  if(this->nombre != nullptr) delete this->nombre;
+  this->nombre = new char[strlen(nombre) + 1];
+  strcpy(this->nombre, nombre);
+}
+
+void Persona::SetEdad(int edad){
+  this->edad = edad;
+}
+```
+
+
+
