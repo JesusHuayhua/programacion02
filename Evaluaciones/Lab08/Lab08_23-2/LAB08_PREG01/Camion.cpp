@@ -32,3 +32,20 @@ int Camion::GetEjes() const {
     return ejes;
 }
 
+//int cliente;
+//    char *placa;
+//    double maxcarga;
+//    double actcarga;
+void Camion::lee(std::ifstream &file){
+    char placa[40],c;
+    int cliente,ejes,llantas;
+    double maxcarga;
+    file >> cliente >> c;
+    file.getline(placa,40,',');
+    file >> maxcarga >> c >> ejes >> c >> llantas;
+    this->SetCliente(cliente);
+    this->SetPlaca(placa);
+    this->SetMaxcarga(maxcarga);
+    this->SetEjes(ejes);
+    this->SetLlantas(llantas);
+}

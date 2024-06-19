@@ -1,15 +1,16 @@
 /* 
  * File:   main.cpp
- * Author: Jes us Huayhua Flores
+ * Author: Jesus Huayhua Flores
  * Codigo: 20196201
  */
-
-#include <cstdlib>
+#include "Flota.hpp"
 
 using namespace std;
 
 int main(int argc, char** argv) {
-
-    return 0;
+    Flota transporte;
+    transporte.cargaflota();
+    transporte.muestracarga();
+return 0;
 }
 

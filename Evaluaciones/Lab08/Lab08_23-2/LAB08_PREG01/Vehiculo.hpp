@@ -23,6 +23,8 @@ public:
     void GetPlaca(char *placa) const;
     void SetCliente(int cliente);
     int GetCliente() const;
+    virtual void lee(std::ifstream &);
+    virtual void imprime(std::ofstream &);
 private:
     int cliente;
     char *placa;

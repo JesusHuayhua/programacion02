@@ -15,6 +15,9 @@ public:
     LVehiculos();
     LVehiculos(const LVehiculos& orig);
     virtual ~LVehiculos();
+    void leerArchivo(std::ifstream &file);
+    void imprimeLista(std::ofstream &file);
+    void insertarNodo(NodoLista *nuevo);
 private:
     class NodoLista *lini;
     class NodoLista *lfin;

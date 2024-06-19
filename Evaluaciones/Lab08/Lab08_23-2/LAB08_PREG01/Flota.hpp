@@ -15,6 +15,9 @@ public:
     Flota();
     Flota(const Flota& orig);
     virtual ~Flota();
+    void cargaflota(void);
+    void muestracarga(void);
+    void imprime(std::ofstream &file);
 private:
     class LVehiculos lista;
 };

@@ -19,6 +19,7 @@ public:
     int GetLlantas() const;
     void SetEjes(int ejes);
     int GetEjes() const;
+    void lee(std::ifstream &file);
 private:
     int ejes;
     int llantas;

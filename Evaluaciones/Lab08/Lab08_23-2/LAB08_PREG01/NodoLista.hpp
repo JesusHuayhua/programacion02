@@ -15,6 +15,7 @@ public:
     NodoLista();
     NodoLista(const NodoLista& orig);
     virtual ~NodoLista();
+    friend class LVehiculos;
 private:
     class Vehiculo unidad;
     class NodoLista *sig;
