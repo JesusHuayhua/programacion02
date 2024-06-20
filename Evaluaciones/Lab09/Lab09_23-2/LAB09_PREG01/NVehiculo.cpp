@@ -15,6 +15,7 @@ NVehiculo::NVehiculo() {
 }
 
 NVehiculo::NVehiculo(const NVehiculo& orig) {
+    this->unidad = orig.unidad;
 }
 
 NVehiculo::~NVehiculo() {
@@ -32,5 +33,9 @@ void NVehiculo::lee_vehiculo(std::ifstream &file){
             this->unidad = new Camion;
             break;
     }
-    this->unidad.lee(file);
+    this->unidad->lee(file);
+}
+
+void NVehiculo::imprime_vehiculo(std::ofstream &file){
+    this->unidad->imprime(file);
 }

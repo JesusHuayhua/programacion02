@@ -8,6 +8,8 @@
 #include "Furgon.hpp"
 #include "Vehiculo.hpp"
 
+using namespace std;
+
 Furgon::Furgon() {
     filas = 0;
     puertas = 0;
@@ -40,5 +42,12 @@ void Furgon::lee(std::ifstream &file){
     char c;
     int filas, puertas;
     file >> filas >> c >> puertas;
-    file.get();//leemos el salto de linea
+//    file.get();//leemos el salto de linea
+    this->SetFilas(filas);
+    this->SetPuertas(puertas);
+}
+void Furgon::imprime(std::ofstream &file){
+    this->Vehiculo::imprime(file);
+    file << setw(20) << "#Filas:" << this->GetFilas() << endl; 
+    file << setw(20) << "#Puertas:" << this->GetPuertas() << endl; 
 }

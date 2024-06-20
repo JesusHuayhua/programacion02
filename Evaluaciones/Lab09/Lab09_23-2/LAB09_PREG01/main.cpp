@@ -9,7 +9,6 @@ using namespace std;
 int main(int argc, char** argv) {
     Flota Unidades;
     Unidades.cargaflota();
-    //Unidades.cargapedidos();
-//    Unidades.muestracarga();
+    Unidades.muestracarga();
     return 0;
 }

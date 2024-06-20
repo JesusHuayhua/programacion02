@@ -17,6 +17,7 @@ public:
     NVehiculo(const NVehiculo& orig);
     virtual ~NVehiculo();
     void lee_vehiculo(std::ifstream &file);
+    void imprime_vehiculo(std::ofstream &file);
 private:
     Vehiculo *unidad;
 };

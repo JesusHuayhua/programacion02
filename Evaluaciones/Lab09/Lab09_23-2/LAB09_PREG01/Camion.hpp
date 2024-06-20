@@ -10,12 +10,20 @@
 
 #include "Utils.hpp"
 #include "NPedido.hpp"
+#include "Vehiculo.hpp"
 
-class Camion {
+class Camion : public Vehiculo {
 public:
     Camion();
     Camion(const Camion& orig);
     virtual ~Camion();
+    void setLlantas(int llantas);
+    int getLlantas() const;
+    void setEjes(int ejes);
+    int getEjes() const;
+    // funciones
+    void lee(std::ifstream &file);
+    void imprime(std::ofstream &file);
 private:
     int ejes;
     int llantas;

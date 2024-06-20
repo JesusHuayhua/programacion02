@@ -10,8 +10,9 @@
 
 #include "Utils.hpp"
 #include "NPedido.hpp"
+#include "Vehiculo.hpp"
 
-class Furgon {
+class Furgon : public Vehiculo {
 public:
     Furgon();
     Furgon(const Furgon& orig);
@@ -20,7 +21,8 @@ public:
     int GetPuertas() const;
     void SetFilas(int filas);
     int GetFilas() const;
-    lee();
+    void lee(std::ifstream &file);
+    void imprime(std::ofstream &file);
 private:
     int filas;
     int puertas;

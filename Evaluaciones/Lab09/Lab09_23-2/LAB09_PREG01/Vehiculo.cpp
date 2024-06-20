@@ -7,6 +7,8 @@
 
 #include "Vehiculo.hpp"
 
+using namespace std;
+
 Vehiculo::Vehiculo() {
     cliente = 0;
     placa = nullptr;
@@ -60,12 +62,21 @@ int Vehiculo::GetCliente() const {
 
 void Vehiculo::lee(std::ifstream &file) {
     int cliente;
-    char placa[20];
-    double maxcarga,c;
+    char placa[20],c;
+    double maxcarga;
     file >> cliente >> c;
     file.getline(placa,20,',');
     file >> maxcarga >> c;
     this->SetCliente(cliente);
     this->SetPlaca(placa);
     this->SetMaxcarga(maxcarga);
+}
+
+void Vehiculo::imprime(std::ofstream &file){
+    char placa[20];
+    this->GetPlaca(placa);
+    file << setw(20) << "Codigo Cliente: " << this->GetCliente() << endl;
+    file << setw(20) << "Placa:" << placa << endl;
+    file << setw(20) << "Carga Maxima:" << this->GetMaxcarga() << endl;
+    file << setw(20) << "Carga Actual:" << this->GetActcarga() << endl;
 }

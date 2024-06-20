@@ -25,6 +25,8 @@ public:
     int GetCliente() const;
     // Funciones
     virtual void lee(std::ifstream &file);
+    virtual void imprime(std::ofstream &file);
+    //void operator=(const class Vehiculo &vehiculo);
 private:
     int cliente;
     char *placa;

@@ -17,6 +17,7 @@ public:
     Flota(const Flota& orig);
     virtual ~Flota();
     void cargaflota(void);
+    void muestracarga(void);
 private:
     std::vector<NVehiculo> vflota;
 };
