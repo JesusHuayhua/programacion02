@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 class Paciente{
     private int dni;
     private String nombre;
@@ -19,7 +22,7 @@ class Paciente{
         this.dni = dni;
         this.nombre = nombre;
         this.distrito = distrito;
-        this.tiempoTotal = tiempototal;
+        this.tiempoTotal = tiempoTotal;
         this.gastosTotales = gastosTotales;
         this.cantidadDeConsultas = cantidadDeConsultas;
     }
@@ -71,5 +74,22 @@ class Paciente{
     public int GetCantidadDeConsultas(){
         return this.cantidadDeConsultas;
     }
+    
+  //  45201670  ROCIO_YOLANDA_ACUNA_YINO Santa_Anita
+//59561864     GONZALO_VEGA_MUNOZ     Santiago_de_Surco
+    public boolean leerPaciente(Scanner arch){
+      this.dni = arch.nextInt();
+      if(this.dni == 0) return false;
+      this.nombre =  arch.next();
+      this.distrito = arch.next();
+      return true;
+    }
+      
+    public void imprimirPaciente(){    
+      System.out.printf("Codigo: %-10d Nombre: %-40s, TiempoTotal: %-10.2f, GastosTotales: %-10.2f, CantidadDeConsultas: %d\n",
+      this.dni,this.nombre, this.tiempoTotal, this.gastosTotales,this.cantidadDeConsultas);
+      
+    }
+    
 
 }
