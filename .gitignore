@@ -6,6 +6,8 @@ dist/
 *.inc
 *gch
 *.o
+# Archivos generados al momento de compilar en Java
+*.class
 # Extensiones de los file
 .vscode/
 *.exe

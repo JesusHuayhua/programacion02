@@ -1,0 +1,227 @@
+Codigo: 50611      Nombre: EDGAR_MUNOZ_VERGEL                       Especialidad: Urologia            , Tarifa: 112.85     TiempoTotal: 33.25     , IngresosTotales: 3752.42   , CantidadDeConsultas: 20
+Codigo: 15092      Nombre: LUZ_SOFIA_JAUREGUI_BRAVO                 Especialidad: Dermatologia        , Tarifa: 250.15     TiempoTotal: 27.64     , IngresosTotales: 6913.03   , CantidadDeConsultas: 19
+Codigo: 60184      Nombre: SURAMI_HELI_PRECIADO_PINTO               Especialidad: Traumatologia       , Tarifa: 533.86     TiempoTotal: 18.10     , IngresosTotales: 9664.50   , CantidadDeConsultas: 13
+Codigo: 90798      Nombre: GIOVANA_MEJIA_ZEGARRA                    Especialidad: Traumatologia       , Tarifa: 400.78     TiempoTotal: 20.13     , IngresosTotales: 8066.03   , CantidadDeConsultas: 16
+Codigo: 80786      Nombre: ROSARIO_MARIBEL_YEP_ZAVALETA             Especialidad: Ginecologia         , Tarifa: 454.76     TiempoTotal: 35.79     , IngresosTotales: 16277.50  , CantidadDeConsultas: 25
+Codigo: 70233      Nombre: CINTHIA_MILENA_ZEGARRA_CABELLO           Especialidad: Ginecologia         , Tarifa: 795.13     TiempoTotal: 44.61     , IngresosTotales: 35472.07  , CantidadDeConsultas: 36
+Codigo: 89213      Nombre: DELIA_ZARATE_URBINA                      Especialidad: Gastroenterologia   , Tarifa: 538.43     TiempoTotal: 26.75     , IngresosTotales: 14400.76  , CantidadDeConsultas: 22
+Codigo: 90907      Nombre: FIORELLA_ERIKA_FLORENCIO_POLO            Especialidad: Dermatologia        , Tarifa: 741.49     TiempoTotal: 32.11     , IngresosTotales: 23811.92  , CantidadDeConsultas: 25
+Codigo: 60934      Nombre: OFELIA_CARMEN_MERCADO_CARO               Especialidad: Neumologia          , Tarifa: 491.45     TiempoTotal: 32.11     , IngresosTotales: 15778.55  , CantidadDeConsultas: 21
+Codigo: 14787      Nombre: WALTER_JOLAY_CHUMPITAZ                   Especialidad: Traumatologia       , Tarifa: 299.95     TiempoTotal: 32.98     , IngresosTotales: 9891.27   , CantidadDeConsultas: 23
+Codigo: 60049      Nombre: HUMBERTO_ALBERTO_VARGAS_GUEVARA          Especialidad: Gastroenterologia   , Tarifa: 469.25     TiempoTotal: 39.17     , IngresosTotales: 18379.74  , CantidadDeConsultas: 24
+Codigo: 70269      Nombre: DELICIA_ARCA_AQUINO                      Especialidad: Dermatologia        , Tarifa: 213.98     TiempoTotal: 28.28     , IngresosTotales: 6051.71   , CantidadDeConsultas: 19
+Codigo: 53556      Nombre: VALENTINA_PAULA_URBINA_ANTEZANO          Especialidad: Pediatria           , Tarifa: 569.37     TiempoTotal: 21.28     , IngresosTotales: 12117.62  , CantidadDeConsultas: 15
+Codigo: 70612      Nombre: ZKENIA_IRMA_CHUNG_ZUNIGA                 Especialidad: Traumatologia       , Tarifa: 122.10     TiempoTotal: 44.75     , IngresosTotales: 5463.60   , CantidadDeConsultas: 30
+Codigo: 64405      Nombre: LOURDES_CARMELA_YALLICO_PAREDES          Especialidad: Oftalmologia        , Tarifa: 15.88      TiempoTotal: 35.35     , IngresosTotales: 561.28    , CantidadDeConsultas: 22
+Codigo: 90929      Nombre: DELICIA_ROSA_ARCA_LEIVA                  Especialidad: Oftalmologia        , Tarifa: 488.42     TiempoTotal: 41.06     , IngresosTotales: 20055.34  , CantidadDeConsultas: 28
+Codigo: 70367      Nombre: DELIA_ESTEFANIA_CABRERA_MORENO           Especialidad: Urologia            , Tarifa: 493.60     TiempoTotal: 29.21     , IngresosTotales: 14419.15  , CantidadDeConsultas: 20
+Codigo: 18708      Nombre: WILMER_SAENZ_ARANDA                      Especialidad: Ginecologia         , Tarifa: 489.92     TiempoTotal: 25.56     , IngresosTotales: 12523.99  , CantidadDeConsultas: 17
+Codigo: 80138      Nombre: GUSTAVO_ALONSO_DEL_CASTILLO_MEJIA        Especialidad: Geriatria           , Tarifa: 751.21     TiempoTotal: 34.03     , IngresosTotales: 25562.84  , CantidadDeConsultas: 24
+Codigo: 35451      Nombre: JAVIER_EDGARD_LANDA_CABRERA              Especialidad: Pediatria           , Tarifa: 767.02     TiempoTotal: 35.45     , IngresosTotales: 27192.56  , CantidadDeConsultas: 21
+Codigo: 70992      Nombre: OFELIA_BEATRIZ_MONTERO_BOLANOS           Especialidad: Gastroenterologia   , Tarifa: 51.01      TiempoTotal: 33.25     , IngresosTotales: 1696.32   , CantidadDeConsultas: 24
+Codigo: 49768      Nombre: MARINA_NATALIA_GARCIA_INGA               Especialidad: Cardiologia         , Tarifa: 332.20     TiempoTotal: 34.20     , IngresosTotales: 11361.06  , CantidadDeConsultas: 27
+Codigo: 33687      Nombre: BLANCA_LUZ_ACUNA_AYLLON                  Especialidad: Oftalmologia        , Tarifa: 359.43     TiempoTotal: 45.95     , IngresosTotales: 16516.31  , CantidadDeConsultas: 29
+Codigo: 70789      Nombre: VICTORIA_MILAGROS_SHIRAKAWA_SAONA        Especialidad: Pediatria           , Tarifa: 728.24     TiempoTotal: 49.15     , IngresosTotales: 35794.61  , CantidadDeConsultas: 29
+Codigo: 18262      Nombre: EMILIO_EMIGDIO_GONZALES_AGUIRRE          Especialidad: Urologia            , Tarifa: 689.31     TiempoTotal: 25.08     , IngresosTotales: 17290.00  , CantidadDeConsultas: 19
+Codigo: 14655      Nombre: GLENDA_CABRERA_MORI                      Especialidad: Oncologia           , Tarifa: 207.80     TiempoTotal: 23.23     , IngresosTotales: 4826.44   , CantidadDeConsultas: 18
+Codigo: 80227      Nombre: TERESA_TERESA_MARTEL_MERCADO             Especialidad: Pediatria           , Tarifa: 332.38     TiempoTotal: 28.19     , IngresosTotales: 9369.24   , CantidadDeConsultas: 17
+Codigo: 34115      Nombre: MIGUEL_ALEX_LANDEO_ESTRADA               Especialidad: Cardiologia         , Tarifa: 99.27      TiempoTotal: 42.85     , IngresosTotales: 4253.25   , CantidadDeConsultas: 24
+Codigo: 80040      Nombre: DAVID_CARLOS_PEREZ_ANTEZANO              Especialidad: Endocrinologia      , Tarifa: 795.66     TiempoTotal: 19.08     , IngresosTotales: 15178.32  , CantidadDeConsultas: 16
+Codigo: 25448      Nombre: CARMEN_ZAMORA_CABRERA                    Especialidad: Endocrinologia      , Tarifa: 480.39     TiempoTotal: 25.76     , IngresosTotales: 12376.45  , CantidadDeConsultas: 17
+Codigo: 40414      Nombre: YLIANA_FLOR_ORTIZ_GUEVARA                Especialidad: Ginecologia         , Tarifa: 525.02     TiempoTotal: 44.39     , IngresosTotales: 23303.45  , CantidadDeConsultas: 30
+Codigo: 90562      Nombre: HUMBERTO_ALFONSO_AMEZQUITA_CONTRERAS     Especialidad: Dermatologia        , Tarifa: 571.34     TiempoTotal: 38.26     , IngresosTotales: 21858.36  , CantidadDeConsultas: 24
+Codigo: 91509      Nombre: RAUL_COLLADO_VILLA                       Especialidad: Cardiologia         , Tarifa: 567.13     TiempoTotal: 42.65     , IngresosTotales: 24186.83  , CantidadDeConsultas: 27
+Codigo: 30557      Nombre: JAIME_JULIAN_SHIRAKAWA_FLORIAN           Especialidad: Neumologia          , Tarifa: 110.81     TiempoTotal: 34.10     , IngresosTotales: 3779.05   , CantidadDeConsultas: 23
+Codigo: 20189      Nombre: FRANCISCO_ZIMIC_SALAS                    Especialidad: Endocrinologia      , Tarifa: 742.58     TiempoTotal: 30.03     , IngresosTotales: 22302.77  , CantidadDeConsultas: 21
+Codigo: 30082      Nombre: ALFONSO_WALDEMAR_CABELLO_LAM             Especialidad: Cardiologia         , Tarifa: 343.95     TiempoTotal: 43.29     , IngresosTotales: 14889.12  , CantidadDeConsultas: 29
+Codigo: 50718      Nombre: ESTEFANIA_ZEGARRA_CASANOVA               Especialidad: Pediatria           , Tarifa: 466.90     TiempoTotal: 35.03     , IngresosTotales: 16356.03  , CantidadDeConsultas: 24
+Codigo: 52063      Nombre: MILENA_CINTHIA_ZARATE_ACUNA              Especialidad: Traumatologia       , Tarifa: 313.98     TiempoTotal: 30.96     , IngresosTotales: 9720.30   , CantidadDeConsultas: 23
+Codigo: 80063      Nombre: VICTORIA_FIORELLA_CUBA_POMAJAMBO         Especialidad: Gastroenterologia   , Tarifa: 437.35     TiempoTotal: 41.92     , IngresosTotales: 18334.93  , CantidadDeConsultas: 29
+Codigo: 19777      Nombre: ROSARIO_TABORI_ARIAS                     Especialidad: Oftalmologia        , Tarifa: 233.33     TiempoTotal: 33.86     , IngresosTotales: 7901.07   , CantidadDeConsultas: 25
+Codigo: 45201670   Nombre: ROCIO_YOLANDA_ACUNA_YINO                , TiempoTotal: 1.32      , GastosTotales: 688.77    , CantidadDeConsultas: 2
+Codigo: 59561864   Nombre: GONZALO_VEGA_MUNOZ                      , TiempoTotal: 7.46      , GastosTotales: 3999.62   , CantidadDeConsultas: 4
+Codigo: 93282118   Nombre: EVERT_FIGUEROA_COLLADO                  , TiempoTotal: 5.54      , GastosTotales: 2257.98   , CantidadDeConsultas: 4
+Codigo: 45914393   Nombre: MARIA_HELI_ARROYO_GORDILLO              , TiempoTotal: 7.31      , GastosTotales: 2969.69   , CantidadDeConsultas: 5
+Codigo: 72973662   Nombre: MARIA_MADELEINE_SOLIS_NARVAEZ           , TiempoTotal: 6.04      , GastosTotales: 991.36    , CantidadDeConsultas: 4
+Codigo: 51642949   Nombre: MAGALI_SILVANA_DIAZ_ANTEZANO            , TiempoTotal: 5.42      , GastosTotales: 3050.95   , CantidadDeConsultas: 4
+Codigo: 37282858   Nombre: LOURDES_DIANA_SUELDO_MARTINEZ           , TiempoTotal: 5.13      , GastosTotales: 2192.76   , CantidadDeConsultas: 3
+Codigo: 36934113   Nombre: MILAGROS_NATALIA_BACA_CAMACHO           , TiempoTotal: 3.19      , GastosTotales: 1775.39   , CantidadDeConsultas: 2
+Codigo: 17299012   Nombre: SANDRO_ARTURO_PISCOYA_LEE               , TiempoTotal: 1.73      , GastosTotales: 594.94    , CantidadDeConsultas: 1
+Codigo: 51873364   Nombre: JOHAN_CHAVEZ_BERROCAL                   , TiempoTotal: 9.46      , GastosTotales: 4683.73   , CantidadDeConsultas: 6
+Codigo: 27709566   Nombre: JOSE_ROLANDO_CERNA_HIJAR                , TiempoTotal: 13.75     , GastosTotales: 6547.87   , CantidadDeConsultas: 7
+Codigo: 93939698   Nombre: ENRIQUE_JORGE_DURAND_VALVERDE           , TiempoTotal: 11.97     , GastosTotales: 4201.61   , CantidadDeConsultas: 9
+Codigo: 62126128   Nombre: JAVIER_DANIEL_AURIS_ZIMIC               , TiempoTotal: 2.36      , GastosTotales: 1033.94   , CantidadDeConsultas: 2
+Codigo: 77440060   Nombre: MARTIN_JUVENAL_VILLA_SEDANO             , TiempoTotal: 4.20      , GastosTotales: 1949.70   , CantidadDeConsultas: 5
+Codigo: 59596317   Nombre: EDWARD_REYES_TANG                       , TiempoTotal: 10.46     , GastosTotales: 5014.00   , CantidadDeConsultas: 8
+Codigo: 93961840   Nombre: EMIGDIO_FRANCISCO_ESCALANTE_ESPINO      , TiempoTotal: 1.03      , GastosTotales: 466.76    , CantidadDeConsultas: 1
+Codigo: 51465986   Nombre: CAROLA_TATIANA_LOYOLA_CASANOVA          , TiempoTotal: 7.90      , GastosTotales: 970.17    , CantidadDeConsultas: 4
+Codigo: 31284904   Nombre: ELIA_YOLANDA_SEDANO_RETAMOSO            , TiempoTotal: 7.26      , GastosTotales: 3266.64   , CantidadDeConsultas: 6
+Codigo: 90367684   Nombre: HELI_CORONEL_CHUMPITAZ                  , TiempoTotal: 10.36     , GastosTotales: 4245.09   , CantidadDeConsultas: 6
+Codigo: 68269451   Nombre: JORGE_ALFARO_AYALA                      , TiempoTotal: 12.02     , GastosTotales: 5347.91   , CantidadDeConsultas: 8
+Codigo: 22679759   Nombre: FRANCISCO_ARANA_RONDON                  , TiempoTotal: 2.61      , GastosTotales: 1091.02   , CantidadDeConsultas: 3
+Codigo: 30246960   Nombre: MADELEINE_SHIRAKAWA_MIRANDA             , TiempoTotal: 3.69      , GastosTotales: 2005.13   , CantidadDeConsultas: 3
+Codigo: 20371464   Nombre: FELICITA_VILLEGAS_LEIVA                 , TiempoTotal: 7.22      , GastosTotales: 1785.00   , CantidadDeConsultas: 3
+Codigo: 81647285   Nombre: MARITZA_CARBAJAL_SALAMANCA              , TiempoTotal: 7.36      , GastosTotales: 4680.86   , CantidadDeConsultas: 6
+Codigo: 49357767   Nombre: JUAN_PRADO_VERA                         , TiempoTotal: 6.99      , GastosTotales: 3845.47   , CantidadDeConsultas: 5
+Codigo: 92275859   Nombre: ROBERTO_INFANTES_HERNANDEZ              , TiempoTotal: 4.02      , GastosTotales: 1293.87   , CantidadDeConsultas: 3
+Codigo: 79100967   Nombre: WILVER_ALFONSO_RIVERO_CORTEZ            , TiempoTotal: 6.80      , GastosTotales: 3369.89   , CantidadDeConsultas: 7
+Codigo: 99774549   Nombre: ROLANDO_SOLIS_CHUNG                     , TiempoTotal: 2.55      , GastosTotales: 1361.64   , CantidadDeConsultas: 2
+Codigo: 28992638   Nombre: ELOY_JAIME_ORTEGA_LANDEO                , TiempoTotal: 0.82      , GastosTotales: 565.04    , CantidadDeConsultas: 1
+Codigo: 71422479   Nombre: ALBERTO_DE_LA_HAZA_CABRERA              , TiempoTotal: 2.39      , GastosTotales: 1256.11   , CantidadDeConsultas: 2
+Codigo: 80694546   Nombre: MADELEINE_YLIANA_MIYAKE_MEREL           , TiempoTotal: 7.63      , GastosTotales: 4754.50   , CantidadDeConsultas: 7
+Codigo: 43704548   Nombre: ERICKA_VICTORIA_JUSTINO_FORZANI         , TiempoTotal: 5.97      , GastosTotales: 2396.84   , CantidadDeConsultas: 4
+Codigo: 53420926   Nombre: MILAGROS_VILCARA_GAVIDIA                , TiempoTotal: 10.38     , GastosTotales: 3746.19   , CantidadDeConsultas: 6
+Codigo: 57182371   Nombre: EDGARD_HENRY_VELASQUEZ_HUAYANAY         , TiempoTotal: 2.39      , GastosTotales: 1018.61   , CantidadDeConsultas: 2
+Codigo: 99891737   Nombre: CHRISTIAN_PAREDES_PATINO                , TiempoTotal: 4.93      , GastosTotales: 1604.86   , CantidadDeConsultas: 4
+Codigo: 35852072   Nombre: BEATRIZ_HENRIQUEZ_ESPINO                , TiempoTotal: 12.14     , GastosTotales: 5395.25   , CantidadDeConsultas: 7
+Codigo: 54815159   Nombre: ANNIE_OFELIA_ASMAD_ACUNA                , TiempoTotal: 6.88      , GastosTotales: 2846.63   , CantidadDeConsultas: 6
+Codigo: 35606314   Nombre: ROLANDO_CASTRO_SUAREZ                   , TiempoTotal: 2.90      , GastosTotales: 1372.61   , CantidadDeConsultas: 2
+Codigo: 58643376   Nombre: ANTONIO_SUELDO_RUIZ                     , TiempoTotal: 10.61     , GastosTotales: 3736.09   , CantidadDeConsultas: 7
+Codigo: 91187814   Nombre: VIRGINIA_IRMA_BENAVENTE_AYALA           , TiempoTotal: 9.65      , GastosTotales: 4200.27   , CantidadDeConsultas: 6
+Codigo: 65912822   Nombre: RONAL_CORTEZ_MERCADO                    , TiempoTotal: 10.95     , GastosTotales: 4138.96   , CantidadDeConsultas: 7
+Codigo: 86836066   Nombre: ALEXANDER_ZARATE_PEREZ                  , TiempoTotal: 5.45      , GastosTotales: 2656.34   , CantidadDeConsultas: 3
+Codigo: 63640178   Nombre: RICHARD_SANDRO_PEREZ_FARFAN             , TiempoTotal: 6.73      , GastosTotales: 4857.09   , CantidadDeConsultas: 5
+Codigo: 93231760   Nombre: CARMELA_TERESA_VEGA_VILCARA             , TiempoTotal: 10.21     , GastosTotales: 2565.59   , CantidadDeConsultas: 5
+Codigo: 12484697   Nombre: ANGEL_SHIRAKAWA_ORTEGA                  , TiempoTotal: 5.42      , GastosTotales: 1609.86   , CantidadDeConsultas: 3
+Codigo: 36471787   Nombre: ANNIE_LOURDES_MEREL_SALAZAR             , TiempoTotal: 10.78     , GastosTotales: 5478.84   , CantidadDeConsultas: 6
+Codigo: 61061535   Nombre: GUILLERMO_EDRIC_CABRERA_CANALES         , TiempoTotal: 4.05      , GastosTotales: 1631.77   , CantidadDeConsultas: 3
+Codigo: 32538825   Nombre: MARIBEL_VIZCARDO_SINCHE                 , TiempoTotal: 9.46      , GastosTotales: 4507.54   , CantidadDeConsultas: 8
+Codigo: 14956687   Nombre: ALEX_MARTIN_VASQUEZ_PAZ                 , TiempoTotal: 5.02      , GastosTotales: 1272.97   , CantidadDeConsultas: 4
+Codigo: 66039166   Nombre: INES_ADRIA_ESCALANTE_ROJAS              , TiempoTotal: 9.20      , GastosTotales: 3766.43   , CantidadDeConsultas: 6
+Codigo: 35347567   Nombre: ANNIE_MONTERO_MONTERO                   , TiempoTotal: 10.84     , GastosTotales: 5111.64   , CantidadDeConsultas: 6
+Codigo: 81539774   Nombre: ALONSO_FLORENCIO_CORONADO               , TiempoTotal: 13.98     , GastosTotales: 4884.39   , CantidadDeConsultas: 9
+Codigo: 68114999   Nombre: WILLIAMS_JUSTINO_CRUZ                   , TiempoTotal: 8.31      , GastosTotales: 4177.26   , CantidadDeConsultas: 7
+Codigo: 22598563   Nombre: ALONSO_FORZANI_CARO                     , TiempoTotal: 14.25     , GastosTotales: 5111.96   , CantidadDeConsultas: 8
+Codigo: 75100362   Nombre: ALEX_HENRIQUEZ_PORTUGAL                 , TiempoTotal: 7.55      , GastosTotales: 3105.48   , CantidadDeConsultas: 5
+Codigo: 15290194   Nombre: DAVID_EDRIC_CERNA_IPARRAGUIRRE          , TiempoTotal: 10.46     , GastosTotales: 4899.29   , CantidadDeConsultas: 7
+Codigo: 66091742   Nombre: CARLOS_JULIAN_PRADO_VERGEL              , TiempoTotal: 3.42      , GastosTotales: 2054.36   , CantidadDeConsultas: 2
+Codigo: 72330000   Nombre: WALDEMAR_EDGARD_DURAND_MEZA             , TiempoTotal: 3.86      , GastosTotales: 676.72    , CantidadDeConsultas: 2
+Codigo: 52313890   Nombre: JESUS_RAFAEL_NARVAEZ_CASTILLO           , TiempoTotal: 8.37      , GastosTotales: 4004.03   , CantidadDeConsultas: 7
+Codigo: 86988155   Nombre: DELIA_LOZADA_FORZANI                    , TiempoTotal: 4.08      , GastosTotales: 2243.12   , CantidadDeConsultas: 2
+Codigo: 85395219   Nombre: IRMA_LOURDES_CORRALES_TSUKAZAN          , TiempoTotal: 6.53      , GastosTotales: 3228.58   , CantidadDeConsultas: 4
+Codigo: 77324146   Nombre: LOURDES_SONIA_SOMA_PINTO                , TiempoTotal: 6.48      , GastosTotales: 3103.23   , CantidadDeConsultas: 4
+Codigo: 95656771   Nombre: FELICITA_VALENTINA_LOZADA_ARGUEDAS      , TiempoTotal: 10.51     , GastosTotales: 4591.20   , CantidadDeConsultas: 5
+Codigo: 41964357   Nombre: VIRGINIA_MARTHA_SALAMANCA_VEGA          , TiempoTotal: 16.15     , GastosTotales: 7065.02   , CantidadDeConsultas: 12
+Codigo: 34571095   Nombre: INES_SAM_YALLICO                        , TiempoTotal: 3.92      , GastosTotales: 2207.46   , CantidadDeConsultas: 4
+Codigo: 54149342   Nombre: TERESA_DELIA_ANTEZANO_SEGURA            , TiempoTotal: 6.22      , GastosTotales: 2579.41   , CantidadDeConsultas: 4
+Codigo: 94683380   Nombre: ADRIA_SUELDO_SEDANO                     , TiempoTotal: 4.56      , GastosTotales: 1995.21   , CantidadDeConsultas: 3
+Codigo: 62287143   Nombre: CESAR_ADOLFO_INGA_FLORES                , TiempoTotal: 2.85      , GastosTotales: 1285.29   , CantidadDeConsultas: 2
+Codigo: 34697743   Nombre: MADELEINE_WONG_MARTEL                   , TiempoTotal: 13.35     , GastosTotales: 4888.35   , CantidadDeConsultas: 8
+Codigo: 13731806   Nombre: RONY_GONZALO_VALVERDE_BERROCAL          , TiempoTotal: 5.09      , GastosTotales: 2936.19   , CantidadDeConsultas: 4
+Codigo: 25062013   Nombre: JAIR_ARTURO_MENDOZA_FLORENCIO           , TiempoTotal: 6.99      , GastosTotales: 2139.01   , CantidadDeConsultas: 5
+Codigo: 60543714   Nombre: VALENTINA_ROCIO_AQUINO_TORO             , TiempoTotal: 16.27     , GastosTotales: 8743.24   , CantidadDeConsultas: 13
+Codigo: 18450321   Nombre: SURAMI_JANET_PASQUEL_QUIO               , TiempoTotal: 7.46      , GastosTotales: 4490.06   , CantidadDeConsultas: 5
+Codigo: 65512388   Nombre: ERICK_PAUL_CALIXTO_CASTILLO             , TiempoTotal: 7.27      , GastosTotales: 3352.37   , CantidadDeConsultas: 4
+Codigo: 11833846   Nombre: MIGUEL_CORREA_VIZCARDO                  , TiempoTotal: 13.76     , GastosTotales: 4041.79   , CantidadDeConsultas: 7
+Codigo: 16389806   Nombre: CHRISTIAN_ALONSO_MEJIA_HUAYANAY         , TiempoTotal: 6.18      , GastosTotales: 1609.43   , CantidadDeConsultas: 4
+Codigo: 79821095   Nombre: ALBERTO_PAIRAZAMAN_DE_LA_CUBA           , TiempoTotal: 2.14      , GastosTotales: 640.39    , CantidadDeConsultas: 1
+Codigo: 84432543   Nombre: SHIRLEY_ISABEL_CABRERA_LUNA             , TiempoTotal: 3.06      , GastosTotales: 1485.51   , CantidadDeConsultas: 3
+Codigo: 64223971   Nombre: GLENDA_MARGOT_PENA_SUAREZ               , TiempoTotal: 7.80      , GastosTotales: 3370.88   , CantidadDeConsultas: 7
+Codigo: 80793196   Nombre: GUILLERMO_ALFONSO_DELGADO_GONZALES      , TiempoTotal: 4.32      , GastosTotales: 1567.59   , CantidadDeConsultas: 4
+Codigo: 44052040   Nombre: SILVANA_CHAVEZ_PRADO                    , TiempoTotal: 2.74      , GastosTotales: 1425.61   , CantidadDeConsultas: 2
+Codigo: 54989159   Nombre: RAUL_ORTIZ_DURAND                       , TiempoTotal: 12.29     , GastosTotales: 4803.21   , CantidadDeConsultas: 11
+Codigo: 74526558   Nombre: EVERT_AURIS_FLORIAN                     , TiempoTotal: 9.35      , GastosTotales: 5295.64   , CantidadDeConsultas: 7
+Codigo: 16720731   Nombre: SHIRLEY_PINTO_CALIXTO                   , TiempoTotal: 11.02     , GastosTotales: 4725.37   , CantidadDeConsultas: 7
+Codigo: 70149460   Nombre: VICTOR_RICARDO_JAUREGUI_DEL_CASTILLO    , TiempoTotal: 8.58      , GastosTotales: 3825.58   , CantidadDeConsultas: 4
+Codigo: 46036400   Nombre: ADRIA_ASMAD_CHAVEZ                      , TiempoTotal: 7.45      , GastosTotales: 2895.94   , CantidadDeConsultas: 6
+Codigo: 11895107   Nombre: WALDEMAR_LUNA_VARGAS                    , TiempoTotal: 2.11      , GastosTotales: 633.98    , CantidadDeConsultas: 1
+Codigo: 14015152   Nombre: YVONNE_SILVANA_SINCHE_RIVERO            , TiempoTotal: 9.49      , GastosTotales: 3482.63   , CantidadDeConsultas: 5
+Codigo: 48446380   Nombre: HENRY_ISRAEL_ORTIZ_EPIQUEN              , TiempoTotal: 5.13      , GastosTotales: 2068.14   , CantidadDeConsultas: 5
+Codigo: 73749406   Nombre: ANGEL_ERICK_CHUMPITAZ_ALCOCER           , TiempoTotal: 19.45     , GastosTotales: 7859.79   , CantidadDeConsultas: 13
+Codigo: 75600514   Nombre: MILENA_JENNY_MEDINA_VELASQUEZ           , TiempoTotal: 4.48      , GastosTotales: 2049.90   , CantidadDeConsultas: 4
+Codigo: 74484812   Nombre: DORIS_NANCY_EGUSQUIZA_BERROCAL          , TiempoTotal: 4.53      , GastosTotales: 1838.76   , CantidadDeConsultas: 4
+Codigo: 98609464   Nombre: DANIEL_VARGAS_ALAMO                     , TiempoTotal: 5.35      , GastosTotales: 3557.54   , CantidadDeConsultas: 4
+Codigo: 22020320   Nombre: ROLANDO_RAFFO_CORONADO                  , TiempoTotal: 4.62      , GastosTotales: 1797.92   , CantidadDeConsultas: 3
+Codigo: 24433250   Nombre: BRUNO_ROBERTO_MARTEL_ASMAD              , TiempoTotal: 9.43      , GastosTotales: 4881.75   , CantidadDeConsultas: 5
+Codigo: 68773869   Nombre: JOHANA_GLORIA_PORTUGAL_BENAVENTE        , TiempoTotal: 12.35     , GastosTotales: 5111.37   , CantidadDeConsultas: 9
+Codigo: 30335115   Nombre: GUIDA_FELICITA_SHIRAKAWA_MEZA           , TiempoTotal: 4.08      , GastosTotales: 1534.52   , CantidadDeConsultas: 3
+Codigo: 81986295   Nombre: MAGALI_BEATRIZ_ARCA_SANCHEZ             , TiempoTotal: 10.24     , GastosTotales: 2575.16   , CantidadDeConsultas: 6
+Codigo: 23510105   Nombre: CARLOS_ALBERTO_BARRIOS_TOMASICHE        , TiempoTotal: 5.08      , GastosTotales: 2111.80   , CantidadDeConsultas: 3
+Codigo: 76505858   Nombre: MIGUEL_ROBERTO_ALAMO_PAIRAZAMAN         , TiempoTotal: 6.00      , GastosTotales: 2847.43   , CantidadDeConsultas: 3
+Codigo: 34246621   Nombre: AMERICO_WALDEMAR_GARCIA_YINO            , TiempoTotal: 6.22      , GastosTotales: 2369.15   , CantidadDeConsultas: 4
+Codigo: 32239795   Nombre: ADOLFO_LANDEO_SUELDO                    , TiempoTotal: 7.54      , GastosTotales: 2563.27   , CantidadDeConsultas: 5
+Codigo: 16756151   Nombre: CAROLA_ERIKA_RUIZ_GORDILLO              , TiempoTotal: 8.12      , GastosTotales: 3220.34   , CantidadDeConsultas: 5
+Codigo: 55584641   Nombre: JENNY_DELICIA_HIJAR_PAIRAZAMAN          , TiempoTotal: 7.41      , GastosTotales: 2642.58   , CantidadDeConsultas: 5
+Codigo: 22641795   Nombre: PATRICIA_ELIZABETH_FUENTES_ESCALANTE    , TiempoTotal: 6.79      , GastosTotales: 2794.38   , CantidadDeConsultas: 5
+Codigo: 44075872   Nombre: JOHANA_MALDONADO_FLORIAN                , TiempoTotal: 3.02      , GastosTotales: 1203.13   , CantidadDeConsultas: 3
+Codigo: 28479122   Nombre: EDGAR_MANUEL_AYALA_VIZCARDO             , TiempoTotal: 14.82     , GastosTotales: 5299.20   , CantidadDeConsultas: 9
+Codigo: 36371870   Nombre: SANDRA_GLORIA_PAZ_CANALES               , TiempoTotal: 4.38      , GastosTotales: 2106.92   , CantidadDeConsultas: 4
+Codigo: 15847409   Nombre: HENRRY_VEGA_SORIA                       , TiempoTotal: 5.16      , GastosTotales: 1405.87   , CantidadDeConsultas: 4
+Codigo: 98313754   Nombre: ALFONSO_MIRANDA_CHUMPITAZ               , TiempoTotal: 2.82      , GastosTotales: 1385.33   , CantidadDeConsultas: 3
+Codigo: 89949425   Nombre: RAFAEL_IBEROS_VALDERRAMA                , TiempoTotal: 13.28     , GastosTotales: 5844.47   , CantidadDeConsultas: 9
+Codigo: 11410160   Nombre: TATIANA_NANCY_VILLA_YALLICO             , TiempoTotal: 7.01      , GastosTotales: 2689.96   , CantidadDeConsultas: 5
+Codigo: 19343072   Nombre: ALEXANDER_MARTIN_BARRERA_MIRANDA        , TiempoTotal: 12.84     , GastosTotales: 3850.48   , CantidadDeConsultas: 8
+Codigo: 48328459   Nombre: CESAR_WILVER_ASTETE_RIOS                , TiempoTotal: 6.93      , GastosTotales: 4286.08   , CantidadDeConsultas: 6
+Codigo: 33648133   Nombre: RONAL_CHUMPITAZ_IBEROS                  , TiempoTotal: 18.16     , GastosTotales: 7571.73   , CantidadDeConsultas: 11
+Codigo: 40654049   Nombre: MILAGROS_GIOVANA_GAVIDIA_PALOMARES      , TiempoTotal: 2.35      , GastosTotales: 317.95    , CantidadDeConsultas: 2
+Codigo: 12604666   Nombre: ROCIO_RAMIREZ_AGUERO                    , TiempoTotal: 5.59      , GastosTotales: 2383.24   , CantidadDeConsultas: 4
+Codigo: 73107226   Nombre: FLOR_FREYSA_NORABUENA_POLO              , TiempoTotal: 7.10      , GastosTotales: 4697.13   , CantidadDeConsultas: 4
+Codigo: 71043973   Nombre: MARTIN_HIJAR_LAM                        , TiempoTotal: 10.50     , GastosTotales: 3977.50   , CantidadDeConsultas: 9
+Codigo: 83887836   Nombre: DIANA_DELIA_LEYVA_SAM                   , TiempoTotal: 3.35      , GastosTotales: 1639.65   , CantidadDeConsultas: 2
+Codigo: 49328569   Nombre: ROSA_SANTISTEBAN_MEZA                   , TiempoTotal: 4.66      , GastosTotales: 1664.40   , CantidadDeConsultas: 3
+Codigo: 21753765   Nombre: CINTHIA_NORABUENA_PRECIADO              , TiempoTotal: 4.34      , GastosTotales: 1232.87   , CantidadDeConsultas: 2
+Codigo: 25725510   Nombre: TATIANA_KARIN_TORRES_ARGUEDAS           , TiempoTotal: 11.44     , GastosTotales: 4936.85   , CantidadDeConsultas: 7
+Codigo: 87358658   Nombre: MOISES_MIGUEL_PAIRAZAMAN_ALAMO          , TiempoTotal: 14.85     , GastosTotales: 6441.29   , CantidadDeConsultas: 8
+Codigo: 62980060   Nombre: ANGEL_CHANG_SEGURA                      , TiempoTotal: 3.46      , GastosTotales: 1919.07   , CantidadDeConsultas: 2
+Codigo: 26476609   Nombre: EDGAR_JAVIER_SUCHERO_EPIQUEN            , TiempoTotal: 2.52      , GastosTotales: 1031.22   , CantidadDeConsultas: 2
+Codigo: 32568635   Nombre: MARTHA_LOZADA_YINO                      , TiempoTotal: 3.96      , GastosTotales: 2330.94   , CantidadDeConsultas: 4
+Codigo: 94216806   Nombre: JANET_FLOR_BRAVO_CORTES                 , TiempoTotal: 10.01     , GastosTotales: 5378.62   , CantidadDeConsultas: 6
+Codigo: 37268969   Nombre: GUILLERMO_HERNANDEZ_CORRALES            , TiempoTotal: 6.52      , GastosTotales: 2131.33   , CantidadDeConsultas: 4
+Codigo: 25120943   Nombre: SURAMI_ANNIE_RAFFO_ARIAS                , TiempoTotal: 11.29     , GastosTotales: 6542.02   , CantidadDeConsultas: 6
+Codigo: 12668465   Nombre: RAFAEL_SUAREZ_BOLANOS                   , TiempoTotal: 5.32      , GastosTotales: 3345.28   , CantidadDeConsultas: 3
+Codigo: 97722592   Nombre: GLORIA_TATIANA_ROMERO_PALOMARES         , TiempoTotal: 4.13      , GastosTotales: 2061.96   , CantidadDeConsultas: 3
+Codigo: 62061917   Nombre: MAGDA_CARMEN_SALAS_URBINA               , TiempoTotal: 10.14     , GastosTotales: 5658.81   , CantidadDeConsultas: 7
+Codigo: 39553212   Nombre: RAUL_MANUEL_HENRIQUEZ_YOSHINARI         , TiempoTotal: 6.51      , GastosTotales: 2368.90   , CantidadDeConsultas: 6
+Codigo: 48505497   Nombre: EDGAR_RICHARD_PRADO_FALCON              , TiempoTotal: 5.36      , GastosTotales: 2671.81   , CantidadDeConsultas: 4
+Codigo: 81586212   Nombre: BEATRIZ_ROSA_PATINO_CHUNG               , TiempoTotal: 10.89     , GastosTotales: 3244.14   , CantidadDeConsultas: 7
+Codigo: 14683865   Nombre: RICARDO_WONG_PRECIADO                   , TiempoTotal: 14.81     , GastosTotales: 6371.53   , CantidadDeConsultas: 10
+Codigo: 92417023   Nombre: JULIO_HENRRY_ROSEMBERG_LAU              , TiempoTotal: 5.82      , GastosTotales: 1738.04   , CantidadDeConsultas: 3
+Codigo: 74073306   Nombre: HUMBERTO_AGUERO_AVILA                   , TiempoTotal: 7.99      , GastosTotales: 2666.47   , CantidadDeConsultas: 5
+Codigo: 40604243   Nombre: EVERT_ROBERTO_AMEZQUITA_EPIQUEN         , TiempoTotal: 4.83      , GastosTotales: 2796.49   , CantidadDeConsultas: 3
+Codigo: 62322876   Nombre: JOHANA_YDALI_CRUZ_FUENTES               , TiempoTotal: 12.81     , GastosTotales: 6476.28   , CantidadDeConsultas: 8
+Codigo: 39156030   Nombre: HELI_BLANCA_LOZADA_IBEROS               , TiempoTotal: 9.02      , GastosTotales: 4831.50   , CantidadDeConsultas: 5
+Codigo: 35989948   Nombre: HECTOR_PASQUEL_DURAND                   , TiempoTotal: 3.52      , GastosTotales: 1578.40   , CantidadDeConsultas: 4
+Codigo: 82441274   Nombre: SANDRO_CARO_POLO                        , TiempoTotal: 9.39      , GastosTotales: 3389.73   , CantidadDeConsultas: 5
+Codigo: 36988918   Nombre: MARGOT_FARFAN_SALAZAR                   , TiempoTotal: 4.72      , GastosTotales: 2544.23   , CantidadDeConsultas: 5
+Codigo: 33912812   Nombre: HELI_URBINA_CASTILLO                    , TiempoTotal: 6.27      , GastosTotales: 3462.07   , CantidadDeConsultas: 5
+Codigo: 99088382   Nombre: MELVIN_WALDEMAR_MARTEL_CABELLO          , TiempoTotal: 1.83      , GastosTotales: 832.34    , CantidadDeConsultas: 1
+Codigo: 95427641   Nombre: EDRIC_RONALD_ARCA_AMEZQUITA             , TiempoTotal: 12.73     , GastosTotales: 6855.66   , CantidadDeConsultas: 10
+Codigo: 20246477   Nombre: MELVIN_HENRRY_LAURA_WONG                , TiempoTotal: 7.46      , GastosTotales: 3369.68   , CantidadDeConsultas: 6
+Codigo: 19123289   Nombre: YDALI_LUCERO_CAMACHO_PAIRAZAMAN         , TiempoTotal: 9.80      , GastosTotales: 2930.25   , CantidadDeConsultas: 6
+Codigo: 30944065   Nombre: LORENA_IRMA_SALAZAR_CORRALES            , TiempoTotal: 10.69     , GastosTotales: 4311.37   , CantidadDeConsultas: 7
+Codigo: 94972543   Nombre: YVONNE_IRMA_BENAVENTE_VILCA             , TiempoTotal: 14.53     , GastosTotales: 5739.25   , CantidadDeConsultas: 9
+Codigo: 39496111   Nombre: RAFAEL_URBINA_HIJAR                     , TiempoTotal: 5.69      , GastosTotales: 917.01    , CantidadDeConsultas: 5
+Codigo: 62096337   Nombre: BLANCA_OFELIA_RODRIGUEZ_MORENO          , TiempoTotal: 9.20      , GastosTotales: 3836.01   , CantidadDeConsultas: 5
+Codigo: 84479697   Nombre: CINTHIA_CERNA_CERNA                     , TiempoTotal: 1.66      , GastosTotales: 576.79    , CantidadDeConsultas: 2
+Codigo: 95432260   Nombre: VICTOR_VILCARA_CORREA                   , TiempoTotal: 10.17     , GastosTotales: 3940.88   , CantidadDeConsultas: 6
+Codigo: 83808667   Nombre: MONICA_TERESA_LAU_BACA                  , TiempoTotal: 8.81      , GastosTotales: 3174.72   , CantidadDeConsultas: 5
+Codigo: 15053104   Nombre: FIORELLA_MOSCOSO_ARIAS                  , TiempoTotal: 9.09      , GastosTotales: 3234.38   , CantidadDeConsultas: 5
+Codigo: 61361044   Nombre: OFELIA_MARIA_ZAMBRANO_MOSCOSO           , TiempoTotal: 9.90      , GastosTotales: 4444.26   , CantidadDeConsultas: 7
+Codigo: 29566198   Nombre: LUCERO_DELICIA_DE_LA_CUBA_JUGO          , TiempoTotal: 4.12      , GastosTotales: 2194.54   , CantidadDeConsultas: 5
+Codigo: 17011137   Nombre: DORIS_LOURDES_PINTO_SAENZ               , TiempoTotal: 4.52      , GastosTotales: 910.75    , CantidadDeConsultas: 3
+Codigo: 76348508   Nombre: HUMBERTO_MANUEL_ZAMBRANO_ARIAS          , TiempoTotal: 2.53      , GastosTotales: 1616.74   , CantidadDeConsultas: 2
+Codigo: 48132747   Nombre: IRMA_VIRGINIA_DIAZ_CORREA               , TiempoTotal: 10.91     , GastosTotales: 6202.48   , CantidadDeConsultas: 7
+Codigo: 37357229   Nombre: ELIZABETH_KARIN_FARFAN_FALCON           , TiempoTotal: 3.43      , GastosTotales: 1197.46   , CantidadDeConsultas: 3
+Codigo: 95956321   Nombre: ERICKA_OFELIA_AYALA_CASTILLO            , TiempoTotal: 6.83      , GastosTotales: 3367.08   , CantidadDeConsultas: 5
+Codigo: 15053852   Nombre: EMILIO_HERNANDEZ_BARRIOS                , TiempoTotal: 5.74      , GastosTotales: 3232.84   , CantidadDeConsultas: 4
+Codigo: 15069737   Nombre: DELICIA_VIRGINIA_PATINO_BOLANOS         , TiempoTotal: 4.11      , GastosTotales: 1354.94   , CantidadDeConsultas: 2
+Codigo: 98684552   Nombre: JOHANA_CINTHIA_CONTRERAS_CHANG          , TiempoTotal: 11.10     , GastosTotales: 4440.07   , CantidadDeConsultas: 9
+Codigo: 14907293   Nombre: MARIBEL_QUIO_QUIROGA                    , TiempoTotal: 5.16      , GastosTotales: 1515.84   , CantidadDeConsultas: 3
+Codigo: 68702300   Nombre: JOHNNY_MOYA_ARANDA                      , TiempoTotal: 9.25      , GastosTotales: 4797.10   , CantidadDeConsultas: 7
+Codigo: 21598756   Nombre: INES_MARTHA_MORALES_VALVERDE            , TiempoTotal: 4.90      , GastosTotales: 2564.98   , CantidadDeConsultas: 3
+Codigo: 81698908   Nombre: RONAL_DAVID_CASANOVA_SAAVEDRA           , TiempoTotal: 2.00      , GastosTotales: 1062.22   , CantidadDeConsultas: 2
+Codigo: 97311976   Nombre: VIRGINIA_KARINA_JUSTINO_NORABUENA       , TiempoTotal: 3.27      , GastosTotales: 752.46    , CantidadDeConsultas: 2
+Codigo: 53601565   Nombre: LUCERO_YLIANA_ARCA_LARRIEGA             , TiempoTotal: 10.93     , GastosTotales: 4472.16   , CantidadDeConsultas: 6
+Codigo: 16738755   Nombre: WILLIAMS_HUMBERTO_ZUNIGA_INFANTES       , TiempoTotal: 0.00      , GastosTotales: 0.00      , CantidadDeConsultas: 0
+Codigo: 56515992   Nombre: ROSARIO_MENDOZA_EGUSQUIZA               , TiempoTotal: 3.06      , GastosTotales: 1812.23   , CantidadDeConsultas: 3
+Codigo: 29878779   Nombre: HUMBERTO_ANTONIO_ZARATE_DEL_POZO        , TiempoTotal: 7.01      , GastosTotales: 3904.37   , CantidadDeConsultas: 4
+Codigo: 22091940   Nombre: MONICA_DORIS_CALIXTO_TOMASICHE          , TiempoTotal: 5.86      , GastosTotales: 2952.81   , CantidadDeConsultas: 4
+Codigo: 57396617   Nombre: MARIELLA_MIYAKE_AVILA                   , TiempoTotal: 6.60      , GastosTotales: 2760.19   , CantidadDeConsultas: 4
+Codigo: 31099368   Nombre: ROLANDO_JAUREGUI_ALCOCER                , TiempoTotal: 13.96     , GastosTotales: 7183.69   , CantidadDeConsultas: 10
+Codigo: 62513737   Nombre: ALEX_HENRY_FALCON_PRECIADO              , TiempoTotal: 2.97      , GastosTotales: 1320.63   , CantidadDeConsultas: 4
+Codigo: 24380124   Nombre: ADRIA_GLORIA_RAFFO_CHUNG                , TiempoTotal: 7.33      , GastosTotales: 2152.16   , CantidadDeConsultas: 8
+Codigo: 78667115   Nombre: TATIANA_DELICIA_PAIRAZAMAN_RAFFO        , TiempoTotal: 6.62      , GastosTotales: 3367.13   , CantidadDeConsultas: 3
+Codigo: 35727986   Nombre: CESAR_BRUNO_PISCOYA_BRAVO               , TiempoTotal: 3.30      , GastosTotales: 2054.12   , CantidadDeConsultas: 3
+Codigo: 90739188   Nombre: VIRGINIA_CHUMPITAZ_PALOMARES            , TiempoTotal: 4.34      , GastosTotales: 2813.85   , CantidadDeConsultas: 3
+Codigo: 22199440   Nombre: FRANCISCO_EDGAR_MEJIA_DE_LA_HAZA        , TiempoTotal: 7.91      , GastosTotales: 2728.94   , CantidadDeConsultas: 5
+Codigo: 47265395   Nombre: MARTIN_CERNA_DURAND                     , TiempoTotal: 2.70      , GastosTotales: 1722.15   , CantidadDeConsultas: 3
